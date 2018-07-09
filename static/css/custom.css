@@ -17,3 +17,66 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
+#contents{
+    padding: 0px 10px 0px 310px;
+}
+#brand-name{
+    padding-left: 310px;
+}
+.degree-desc{
+    height: 200px;
+}
+.degree-container{
+    height: 200px;
+    background: #223843;
+    color: #fff;
+    padding: 20px !important;
+}
+.institution{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.degree-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.degree-desc-center{
+    margin: auto;
+}
+.degree-sm{
+    margin: 6px;
+}
+@media only screen and (max-width : 992px) {
+    #brand-name, #contents{
+        padding-left: 10px;
+    }
+    #brand-name{
+        padding-left: 0px;
+    }
+    .degree-desc, .degree-container{
+        width: 100%;
+        height: auto;
+        overflow-wrap: break-word;
+    }
+    .degree-desc{
+        height: 120px;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    .degree-container{
+        margin-top: 0px;
+    }
+}
+@media only screen and (min-width : 601px) and (max-width: 991px){
+    .degree-desc, .degree-container{
+        height: 200px;
+    }
+    .degree-desc{
+        margin-bottom: auto;
+    }
+    .degree-container{
+        margin-top: 7px;
+    }
+}
