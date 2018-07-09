@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <!-- CUSTOM-CSS -->
         <link rel="stylesheet" href="static/css/custom.css">
+        <!-- <link rel="stylesheet" href="static/css/all.css"> -->
         <!-- END-CUSTOM-CSS -->
         <title>Swetank</title>
         <style>
@@ -51,9 +52,10 @@
         <nav style="background: #223843;">
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <div class="nav-wrapper">
-                <a id="brand-name" href="#!" class="brand-logo">Swetank</a>
+                <a id="brand-name" href="#!" class="brand-logo" style="font-size: 21px;">Swetank Subham</a>
                 <ul class="right hide-on-med-and-down">
                     <!-- <li><a href="#"><i class="material-icons left">search</i>Search</a></li> -->
+                    <li><a href="#education"><i class="material-icons left fas fa-user-graduate"></i>Education</a></li>
                     <li><a href="#"><i class="material-icons right">view_module</i>Resume</a></li>
                 </ul>
             </div>
@@ -62,7 +64,7 @@
             <div class="card-panel">
                 <div class="row" style="margin-bottom: 8px;">
                     <div class="col m6">
-                        <h5 class="heading"><strong>About</strong></h5>
+                        <h5 class="heading" id="about"><strong>About</strong></h5>
                         <div class="divider"></div>
                         <p>I believe am a good, slow, life-long learner and efficient implementor of my learnings.</p>
                     </div>
@@ -93,7 +95,7 @@
                 </div>
             </div>
             <div class="row">
-                <h5><strong>Education</strong></h5>
+                <h5 id="education"><strong>Education</strong></h5>
                 <div class="row">
                     <div class="col center m3 card-panel degree-desc green white-text valign-wrapper center-align">
                         <div class="degree-desc-center">
@@ -101,7 +103,7 @@
                             <div class="degree"><h5 class="degree-sm">Bachelor's Degree</h5></div>
                         </div>
                     </div>
-                    <div class="col m9 card-panel degree-container">
+                    <div class="col m9 card-panel degree-container" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
                         <div class="degree-name">Bachelor of Technology | Computer Science and Engineering</div>
                         <p class="institution">Lovely Professional University, Punjab</p>
                         <p>I am pursuing Bachelor of Technology in Computer Science and Engineering from Lovely Professional University, Punjab, one of the largest private university of India.</p>
@@ -116,10 +118,10 @@
                             <p>(Intermediate | XII)</p>
                         </div>
                     </div>
-                    <div class="col m9 card-panel degree-container">
+                    <div class="col m9 card-panel degree-container" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
                         <div class="degree-name">Science and Mathematics</div>
                         <p class="institution">Chandrasheel Vidyapeeth, Kanti</p>
-                        <p>I have compeleted my intermediate from Chandrasheel Vidyapeeth, Kanti, where I have learnt Physics, Chemistry, Mathematics, English(language) and Physical Education.</p>
+                        <p>I completed senior secondary school with physics, chemistry, mathematics, physical education and english.</p>
                         <p>Percentage: 71%</p>
                     </div>
                 </div>
@@ -131,10 +133,10 @@
                             <p>(Matriculation | X)</p>
                         </div>
                     </div>
-                    <div class="col m9 card-panel degree-container">
+                    <div class="col m9 card-panel degree-container" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
                         <div class="degree-name">Primary Education</div>
                         <p class="institution">DAV Public School, Bakhri, Muzaffarpur</p>
-                        <p>I have learnt basic of Science(Physics, Chemistry, Biology), Social Studies(Geography, Civics, History), Languages(English, Hindi, Sanskrita).</p>
+                        <p>I learned basic of Science(Physics, Chemistry, Biology), Social Studies(Geography, Civics, History), Languages(English, Hindi, Sanskrit).</p>
                         <p>CGPA: 10/10</p>
                     </div>
                 </div>
@@ -148,6 +150,7 @@
         <!-- END-MATERIALIZE-JS -->
         <!-- CUSTOM-JS -->
         <script type="text/javascript" src="static/javascript/custom.js"></script>
+        <script type="text/javascript" src="static/javascript/aos.js"></script>
         <!-- END-CUSTOM-JS -->
     </body>
 </html>

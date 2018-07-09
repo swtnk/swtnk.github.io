@@ -23,6 +23,7 @@
 }
 #brand-name{
     padding-left: 310px;
+    display: none;
 }
 .degree-desc{
     height: 200px;
@@ -54,6 +55,7 @@
     }
     #brand-name{
         padding-left: 0px;
+        display: block;
     }
     .degree-desc, .degree-container{
         width: 100%;
