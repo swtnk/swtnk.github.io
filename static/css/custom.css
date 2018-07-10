@@ -25,18 +25,27 @@
     padding-left: 310px;
     display: none;
 }
+#education{
+    font-size: 30px;
+    margin-top: 32px;
+}
 .degree-desc{
-    height: 200px;
+    height: auto;
+}
+.col-container{
+    display: flex;
+    margin-bottom: 2px;
+    margin-top: -20px;
 }
 .degree-container{
-    height: 200px;
+    height: auto;
     background: #223843;
     color: #fff;
     padding: 20px !important;
 }
 .institution{
     font-size: 16px;
-    font-weight: 600;
+    color: rgb(192, 182, 182);
     font-family: 'Times New Roman', Times, serif;
 }
 .degree-name{
@@ -50,6 +59,9 @@
     margin: 6px;
 }
 @media only screen and (max-width : 992px) {
+    .col-container{
+        display: block;
+    }
     #brand-name, #contents{
         padding-left: 10px;
     }
@@ -72,13 +84,20 @@
     }
 }
 @media only screen and (min-width : 601px) and (max-width: 991px){
-    .degree-desc, .degree-container{
-        height: 200px;
-    }
     .degree-desc{
-        margin-bottom: auto;
+        height: auto;
+    }
+    .col-container{
+        display: flex;
+        margin-bottom: 18px;
+        margin-top: -20px;
     }
     .degree-container{
+        height: auto;
+        background: #223843;
+        color: #fff;
         margin-top: 7px;
+        margin-bottom: 0;
+        padding: 20px !important;
     }
 }
