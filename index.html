@@ -1,187 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- MATERIAL -->
-        <link rel="stylesheet" type="text/css" href="static/materialize/css/materialize.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- END-MATERIALIZE -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <!-- CUSTOM-CSS -->
-        <link rel="stylesheet" href="static/css/custom.css">
-        <!-- <link rel="stylesheet" href="static/css/all.css"> -->
-        <!-- END-CUSTOM-CSS -->
-        <title>Swetank Subham</title>
-        <style>
-            
-        </style>
-    </head>
-    <body>
-        <ul id="slide-out" class="sidenav sidenav-fixed col m4">
-            <li><div class="user-view">
-                <div class="background">
-                    <img class="bg-img" src="static/media/imgs/2.jpg">
+<html lang="en" theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swetank Subham</title>
+    <link rel="stylesheet" href="./static/css/main.css">
+</head>
+<body>
+    <span id="theme-settings"><button id="theme-switch">&#127762;</button></span>
+    <section id="section-main">
+        <main class="d--flex align-items--center justify-content--center flex-direction--column" id="introduction">
+            <span class="text-container">
+                <label for="intro-text">I am</label>
+                <h1 id="intro-text">Swetank Subham</h1>
+                <div id="mantra-container" class="text-align--right">
+                    <span id="mantra">My manta: <strong>First take away from any event should be learning.</strong></span>
                 </div>
-                <a href="#user"><img class="circle" src="static/media/imgs/shubham.JPG" style="height: 120px; width: 115px;"></a>
-                <a href="#name"><span class="white-text name">Swetank Subham</span></a>
-                <a href="mailto:swetanksubham.r@gmail.com"><span class="white-text email">swetanksubham.r@gmail.com</span></a>
-                </div>
-            </li>
-            <div class="card z-depth-2" style="margin-top: -10px;">
-                <li><a class="subheader black-text">Career Objective</a></li>
+            </span>
+        </main>
+    </section>
+    <section class="info-container" id="section-self-analysis">
+        <div class="cover--vh d--flex align-items--center justify-content--center flex-direction--column" id="self-analysis">
+            <span class="text-container">
+                <label for="self-analysis-text"><strong>Self Analysis</strong></label>
                 <div class="divider"></div>
-                <p class="black-text" style="padding: 0 10px 20px 10px;">To excel in Computer Science and Engineering field I would like to use my technical and managing skills as well as learnings to establish myself as a recognized Web Developer and Programmer in the corporate world.</p>
-            </div>
-            <div class="card z-depth-2" style="margin-top: -12px;">
-                <li><a class="subheader black-text">Connect Me</a></li>
-                <div class="divider"></div>
-                <li><a href="https://www.linkedin.com/in/swetank-subham/" target="_blank" class="waves-effect"><i class="fab fa-lg fa-linkedin" style="color: #0077B5;"></i>Linkedin</a></li>
-                <li><a href="https://github.com/swtnk" target="_blank" class="waves-effect"><i class="fab fa-lg fa-github" style="color: #000;"></i>GitHub</a></li>
-                <li><a href="https://www.facebook.com/shwetankshubham.roy" target="_blank" class="waves-effect"><i class="fab fa-lg fa-facebook" style="color: #4267B2;"></i>Facebook</a></li>
-            </div>
-            <div>
-                <footer class="page-footer card center blue-grey" style="padding: 8px; margin-top: -12px; margin-bottom: 0px;"> 
-                    <div class="container">
-                        &copy; Swetank Subham
-                    </div>
-                </footer>
-            </div>
-        </ul>
-        <nav style="background: #223843;">
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <div class="nav-wrapper">
-                <a id="brand-name" href="#!" class="brand-logo" style="font-size: 21px;">Swetank Subham</a>
-                <ul class="right hide-on-med-and-down">
-                    <!-- <li><a href="#"><i class="material-icons left">search</i>Search</a></li> -->
-                    <li><a href="#education"><i class="material-icons left fas fa-user-graduate"></i>Education</a></li>
-                    <li><a href="/static/media/doc/Swetank Subham.pdf"><i class="material-icons right">view_module</i>Resume</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div id="contents">
-            <div class="card-panel">
-                <div class="row" style="margin-bottom: 8px;">
-                    <div class="col m6">
-                        <h5 class="heading" id="about"><strong>About</strong></h5>
-                        <div class="divider"></div>
-                        <p>I believe am a good, life-long learner and efficient implementer of my learnings.</p>
-                        <div style="display: table">
-                            <div style="display: table-row;">
-                                <div style="display: table-cell;"><strong>Mantra: </strong>Nobody ever fails, either learns or succeeds.</div>
-                            </div>
-                            <div style="display: table-row;">
-                                <div style="display: table-cell;"><strong>Hobbies: </strong>Playing Cricket, Front-End Web Development</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col m6">
-                        <h5 class="heading"><strong>Basic Information</strong></h5>
-                        <div class="divider"></div>
-                        <div class="row" style="padding-top: 15px;">
-                            <div class="col s4"><strong>D.O.B:</strong></div>
-                            <div class="col s8">August 11, 1996</div>
-                        </div>
-                        <div class="row">
-                            <div class="col s4"><strong>Email:</strong></div>
-                            <div class="col s8" style="overflow-wrap: break-word;"><a class="contact-link" href="mailto:swetanksubham.r@gmail.com">swetanksubham.r@gmail.com</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col s4"><strong>Phone:</strong></div>
-                            <div class="col s8"><a class="contact-link" href="tel:+919110090019">+91(IN) 9110-09-0019</a></div>
-                        </div>
-                        <div class="row">
-                            <div class="col s4"><strong>Address:</strong></div>
-                            <div class="col s8">Muzaffarpur, Bihar, India</div>
-                        </div>
-                        <div class="row">
-                            <div class="col s4"><strong>Languages:</strong></div>
-                            <div class="col s8">English, Hindi, Bhojpuri</div>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <h5 class="center" id="education"><strong><i class="material-icons fas fa-user-graduate">&nbsp;</i>Education</strong></h5>
-                <div class="row col-container" style="margin-top: 20px;">
-                    <div class="col center m3 card-panel degree-desc green white-text valign-wrapper center-align">
-                        <div class="degree-desc-center">
-                            <div class="header-year">2015 - 2019</div>
-                            <div class="degree"><h5 class="degree-sm">Bachelor's Degree</h5></div>
-                        </div>
-                    </div>
-                    <div class="col m9 card-panel degree-container valign-wrapper" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
-                        <div>
-                            <div class="degree-name">Bachelor of Technology | Computer Science and Engineering</div>
-                            <div style="margin: 5px 0px"><a class="institution" href="https://lpu.in" target="_blank">Lovely Professional University, Punjab</a></div>
-                            <div class="about-degree">I am pursuing B.Tech (Undergraduation) in Computer Science and Technology with Android Development as minor.</div>
-                            <p>Current CGPA: 7.50/10 | Pursuing</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row col-container">
-                    <div class="col center m3 card-panel degree-desc green white-text valign-wrapper">
-                        <div class="degree-desc-center">
-                            <div class="header-year">2018</div>
-                            <div class="degree"><h5 class="degree-sm">Nanodegree</h5></div>
-                            <p>(MOOCs)</p>
-                        </div>
-                    </div>
-                    <div class="col m9 card-panel degree-container valign-wrapper" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
-                        <div>
-                            <div class="degree-name">Data Structures and Algorithms</div>
-                            <div style="margin: 5px 0px"><a href="https://udacity.com" target="_blank" class="institution">Udacity</a></div>
-                            <div class="about-degree">I learned fundamentals of Python data structures and algorithms and implemented A* route planner.</div>
-                            <p>Completed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row col-container">
-                    <div class="col center m3 card-panel degree-desc green white-text valign-wrapper">
-                        <div class="degree-desc-center">
-                            <div class="header-year">2014</div>
-                            <div class="degree"><h5 class="degree-sm">High School</h5></div>
-                            <p>(Intermediate | XII)</p>
-                        </div>
-                    </div>
-                    <div class="col m9 card-panel degree-container valign-wrapper" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
-                        <div>
-                            <div class="degree-name">Science and Mathematics</div>
-                            <div style="margin: 5px 0px"><a href="http://www.chandrasheel.co.in/" class="institution" target="_blank">Chandrasheel Vidyapeeth, Kanti</a></div>
-                            <div class="about-degree">I completed senior secondary school with physics, chemistry, mathematics, physical education and english.</div>
-                            <p>Percentage: 71%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row col-container">
-                    <div class="col center m3 card-panel degree-desc green white-text valign-wrapper">
-                        <div class="degree-desc-center">
-                            <div class="header-year">2012</div>
-                            <div class="degree"><h5 class="degree-sm">High School</h5></div>
-                            <p>(Matriculation | X)</p>
-                        </div>
-                    </div>
-                    <div class="col m9 card-panel degree-container valign-wrapper" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
-                        <div>
-                            <div class="degree-name">Primary Education</div>
-                            <div style="margin: 5px 0px"><a href="http://davpsmuzaffarpur.com/" class="institution" target="_blank">DAV Public School, Bakhri, Muzaffarpur</p></div>
-                            <div class="about-degree">I learned basic of Science(Physics, Chemistry, Biology), Social Studies(Geography, Civics, History), Languages(English, Hindi, Sanskrit).</div>
-                            <p>CGPA: 10/10</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <p id="self-analysis-text" class="text-align--justify">I believe I am a good learner and describe myself as a lifelong learner and implementer. Very keen to use my technical and managing skills as well as learning for the betterment of software industry by keeping mutual growth in mind. I have two years of corporate experience in software development and scripting which includes various web development projects in different technologies and frameworks like Django (Python), Laravel (PHP), Yii (PHP) and other frameworks like RASA (AI chatbot).</p>
+            </span>
         </div>
-        <!-- JQUERY -->
-        <script type="text/javascript" src="static/javascript/jquery.js"></script>
-        <!-- END-JQUERY -->
-        <!-- MATERIALIZE-JS -->
-        <script type="text/javascript" src="static/materialize/js/materialize.min.js"></script>
-        <!-- END-MATERIALIZE-JS -->
-        <!-- CUSTOM-JS -->
-        <script type="text/javascript" src="static/javascript/custom.js"></script>
-        <script type="text/javascript" src="static/javascript/aos.js"></script>
-        <!-- END-CUSTOM-JS -->
-    </body>
+    </section>
+    <section class="info-container" id="section-about">
+        <div class="cover--vh d--flex align-items--center justify-content--center flex-direction--column" id="self-analysis">
+            <span class="text-container">
+                <label for="self-analysis-text"><strong>Basic information</strong></label>
+                <div class="divider"></div>
+                <div class="table">
+                    <div class="table-row">
+                        <div class="table-col">Date of Birth</div>
+                        <div class="table-col">11 Aug 1996</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">Email</div>
+                        <div class="table-col">
+                            <ul>
+                                <li>swetanksubham.r@gmail.com</li>
+                                <li>swtnk.sbhm.r@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">Phone</div>
+                        <div class="table-col">
+                            <ul>
+                                <li>+91(IN) 9110 09 0019</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">Address</div>
+                        <div class="table-col">
+                            <address>Muzaffarpur, Bihar, India</address>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">Language</div>
+                        <div class="table-col">
+                            <ul>
+                                <li>English</li>
+                                <li>Hindi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </section>
+    <script src="./static/javascript/main.js"></script>
+</body>
 </html>
