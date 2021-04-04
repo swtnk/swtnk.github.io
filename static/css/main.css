@@ -226,7 +226,9 @@ address {
         width: 45%; }
       @media (max-width: 576px) {
         .table.education .table-col {
-          display: block; } }
+          display: block; }
+          .table.education .table-col:first-child {
+            width: 100%; } }
       .table.education .table-col ul {
         list-style: none; }
         .table.education .table-col ul li {
@@ -269,6 +271,9 @@ address {
 
 .education-degree-heading {
   font-size: 1.5rem; }
+  @media (max-width: 576px) {
+    .education-degree-heading {
+      margin-top: 1rem; } }
   @media (min-width: 576px) {
     .education-degree-heading {
       font-size: 1.5rem; } }
@@ -281,6 +286,10 @@ address {
   @media (min-width: 1200px) {
     .education-degree-heading {
       font-size: 1.5vw; } }
+
+@media (max-width: 576px) {
+  .education-institute {
+    margin-top: 1rem; } }
 
 .education-institute a {
   font-size: 1.2rem;
@@ -301,6 +310,9 @@ address {
 .education-text {
   font-size: 1.2rem;
   line-height: 1.6rem; }
+  @media (max-width: 576px) {
+    .education-text {
+      margin-top: 1rem; } }
   @media (min-width: 576px) {
     .education-text {
       font-size: 1.2rem; } }
