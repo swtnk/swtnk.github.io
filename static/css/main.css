@@ -35,7 +35,8 @@ body {
   background: var(--background-1);
   font-size: 14px; }
   body * {
-    color: var(--foreground-1); }
+    color: var(--foreground-1);
+    font-family: 'JetBrains Mono', monospace; }
   body section:nth-child(even) {
     background: var(--background-2); }
 
@@ -126,19 +127,19 @@ address {
 .table {
   display: table; }
   .table.info {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
     @media (min-width: 576px) {
       .table.info {
-        font-size: 1.5rem; } }
+        font-size: 1rem; } }
     @media (min-width: 768px) {
       .table.info {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
     @media (min-width: 992px) {
       .table.info {
-        font-size: 2.5rem; } }
+        font-size: 2rem; } }
     @media (min-width: 1200px) {
       .table.info {
-        font-size: 3vw; } }
+        font-size: 2.5vw; } }
     .table.info .table-row {
       display: table-row;
       line-height: 3rem;
@@ -372,7 +373,8 @@ address {
       font-size: 3vw; } }
 
 #introduction #intro-text {
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-family: 'Train One', cursive; }
   @media (min-width: 576px) {
     #introduction #intro-text {
       font-size: 5rem; } }
