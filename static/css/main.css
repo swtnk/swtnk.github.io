@@ -21,6 +21,10 @@ html[theme="dark"] {
   --background-2: rgb(29, 29, 29);
   --foreground-1: rgb(205, 205, 205);
   --foreground-2: rgb(225, 225, 225);
+  --background-1-val: 49, 49, 49;
+  --background-2-val: 29, 29, 29;
+  --foreground-1-val: 205, 205, 205;
+  --foreground-2-val: 225, 225, 225;
   transition: 1s ease; }
 
 html[theme="light"] {
@@ -28,6 +32,10 @@ html[theme="light"] {
   --background-2: rgb(225, 225, 225);
   --foreground-1: rgb(49, 49, 49);
   --foreground-2: rgb(29, 29, 29);
+  --background-1-val: 205, 205, 205;
+  --background-2-val: 225, 225, 225;
+  --foreground-1-val: 49, 49, 49;
+  --foreground-2-val: 29, 29, 29;
   transition: 1s ease; }
 
 body {
@@ -461,24 +469,24 @@ a.link:hover {
 .employement-company {
   margin-top: 1rem; }
   .employement-company a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none; }
     @media (max-width: 576px) {
       .employement-company a {
-        margin-top: 1rem; } }
+        margin-top: 1.2rem; } }
     @media (min-width: 576px) {
       .employement-company a {
-        font-size: 1.5rem; } }
+        font-size: 1.8rem; } }
     @media (min-width: 768px) {
       .employement-company a {
-        font-size: 1.5rem; } }
+        font-size: 1.8rem; } }
     @media (min-width: 992px) {
       .employement-company a {
-        font-size: 1.5rem; } }
+        font-size: 1.8rem; } }
     @media (min-width: 1200px) {
       .employement-company a {
-        font-size: 1.5vw; } }
+        font-size: 1.8vw; } }
 
 @media (max-width: 576px) {
   .employement-company-address {
@@ -554,56 +562,65 @@ a.link:hover {
   background: none;
   font-size: 1.5rem; }
 
-#introduction label {
-  font-size: 3rem; }
-  @media (min-width: 576px) {
-    #introduction label {
-      font-size: 2rem; } }
-  @media (min-width: 768px) {
-    #introduction label {
-      font-size: 2.5rem; } }
-  @media (min-width: 992px) {
-    #introduction label {
-      font-size: 3rem; } }
-  @media (min-width: 1200px) {
-    #introduction label {
-      font-size: 3vw; } }
+#section-main {
+  position: relative; }
 
-#introduction #intro-text {
-  font-size: 4rem;
-  font-family: 'Montserrat', sans-serif; }
-  @media (min-width: 576px) {
-    #introduction #intro-text {
-      font-size: 5rem; } }
-  @media (min-width: 768px) {
-    #introduction #intro-text {
-      font-size: 6rem; } }
-  @media (min-width: 992px) {
-    #introduction #intro-text {
-      font-size: 7rem; } }
-  @media (min-width: 1200px) {
-    #introduction #intro-text {
-      font-size: 8vw; } }
-
-#introduction #mantra-container {
-  margin-top: 20px; }
-  #introduction #mantra-container #mantra {
-    font-size: 1.5rem; }
+#introduction {
+  position: relative;
+  z-index: 9; }
+  #introduction #particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  #introduction label {
+    font-size: 3rem; }
     @media (min-width: 576px) {
-      #introduction #mantra-container #mantra {
+      #introduction label {
         font-size: 2rem; } }
     @media (min-width: 768px) {
-      #introduction #mantra-container #mantra {
-        font-size: 1.5rem; } }
+      #introduction label {
+        font-size: 2.5rem; } }
     @media (min-width: 992px) {
-      #introduction #mantra-container #mantra {
-        font-size: 2rem; } }
+      #introduction label {
+        font-size: 3rem; } }
     @media (min-width: 1200px) {
-      #introduction #mantra-container #mantra {
-        font-size: 2vw; } }
-  @media (max-width: 768px) {
-    #introduction #mantra-container {
-      text-align: left; } }
+      #introduction label {
+        font-size: 3vw; } }
+  #introduction #intro-text {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif; }
+    @media (min-width: 576px) {
+      #introduction #intro-text {
+        font-size: 5rem; } }
+    @media (min-width: 768px) {
+      #introduction #intro-text {
+        font-size: 6rem; } }
+    @media (min-width: 992px) {
+      #introduction #intro-text {
+        font-size: 7rem; } }
+    @media (min-width: 1200px) {
+      #introduction #intro-text {
+        font-size: 8vw; } }
+  #introduction #mantra-container {
+    margin-top: 20px; }
+    #introduction #mantra-container #mantra {
+      font-size: 1.5rem; }
+      @media (min-width: 576px) {
+        #introduction #mantra-container #mantra {
+          font-size: 2rem; } }
+      @media (min-width: 768px) {
+        #introduction #mantra-container #mantra {
+          font-size: 1.5rem; } }
+      @media (min-width: 992px) {
+        #introduction #mantra-container #mantra {
+          font-size: 2rem; } }
+      @media (min-width: 1200px) {
+        #introduction #mantra-container #mantra {
+          font-size: 2vw; } }
+    @media (max-width: 768px) {
+      #introduction #mantra-container {
+        text-align: left; } }
 
 .info-container .text-container {
   width: 95vw; }
