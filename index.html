@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swetank Subham</title>
-    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     <span id="theme-settings"><button id="theme-switch">&#127762;</button></span>
-    <section id="section-main">
+    <section class="info-section" id="section-main">
         <main class="d--flex align-items--center justify-content--center flex-direction--column" id="introduction">
             <span class="text-container">
                 <label for="intro-text">I am</label>
                 <h1 id="intro-text">Swetank Subham</h1>
                 <div id="mantra-container" class="text-align--right">
-                    <span id="mantra">My mantra: <strong>First take away from any event should be learning.</strong></span>
+                    <span id="mantra">My manta: <strong>First take away from any event should be learning.</strong></span>
                 </div>
             </span>
         </main>
     </section>
-    <section class="info-container" id="section-self-analysis">
+    <section class="info-section info-container" id="section-self-analysis">
         <div class="cover--vh d--flex align-items--center justify-content--center flex-direction--column" id="self-analysis">
             <span class="text-container">
                 <label for="self-analysis-text"><strong>Self Analysis</strong></label>
@@ -29,12 +29,12 @@
             </span>
         </div>
     </section>
-    <section class="info-container" id="section-about">
+    <section class="info-section info-container" id="section-about">
         <div class="cover--vh d--flex align-items--center justify-content--center flex-direction--column" id="self-analysis">
             <span class="text-container">
                 <label for="self-analysis-text"><strong>Basic information</strong></label>
                 <div class="divider"></div>
-                <div class="table">
+                <div class="table info">
                     <div class="table-row">
                         <div class="table-col">Date of Birth</div>
                         <div class="table-col">11 Aug 1996</div>
@@ -42,18 +42,14 @@
                     <div class="table-row">
                         <div class="table-col">Email</div>
                         <div class="table-col">
-                            <ul>
-                                <li>swetanksubham.r@gmail.com</li>
-                                <li>swtnk.sbhm.r@gmail.com</li>
-                            </ul>
+                            <a class="contact-info" href="mailto:swetanksubham.r@gmail.com">swetanksubham.r@gmail.com</a>, 
+                            <a class="contact-info" href="mailto:swtnk.sbhm.r@gmail.com">swtnk.sbhm.r@gmail.com</a>
                         </div>
                     </div>
                     <div class="table-row">
                         <div class="table-col">Phone</div>
                         <div class="table-col">
-                            <ul>
-                                <li>+91(IN) 9110 09 0019</li>
-                            </ul>
+                            <a class="contact-info" href="tel:+919110090019">+91(IN) 9110-09-0019</a>
                         </div>
                     </div>
                     <div class="table-row">
@@ -65,16 +61,75 @@
                     <div class="table-row">
                         <div class="table-col">Language</div>
                         <div class="table-col">
-                            <ul>
-                                <li>English</li>
-                                <li>Hindi</li>
-                            </ul>
+                            <a class="contact-info" href="javascript:void();">English</a>, 
+                            <a class="contact-info" href="javascript:void();">Hindi</a>
                         </div>
                     </div>
                 </div>
             </span>
         </div>
     </section>
-    <script src="./static/javascript/main.js"></script>
+    <section class="info-section info-container p-t-px--50 p-b-px--50" id="section-education">
+        <div class="cover--vh-min d--flex align-items--center justify-content--center flex-direction--column" id="education">
+            <span class="text-container">
+                <label for="self-analysis-text"><strong>Education</strong></label>
+                <div class="divider"></div>
+                <div class="table education">
+                    <div class="table-row">
+                        <div class="table-col">
+                            <p class="education-year">2015-2019</p>
+                            <p class="education-degree">Bachelor's Degree</p>
+                        </div>
+                        <div class="table-col">
+                            <p class="education-degree-heading">Bachelor of Technology | Computer Science and Engineering</p>
+                            <p class="education-institute"><a href="https://lpu.in">Lovely Professional University, Punjab</a></p>
+                            <p class="education-text">Graduated in Computer Science and Technology with Android Development as minor.</p>
+                            <p class="education-grade">CGPA: 8.02/10</p>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <p class="education-year">2018</p>
+                            <p class="education-degree">Nanodegree</p>
+                            <p>(MOOCs)</p>
+                        </div>
+                        <div class="table-col">
+                            <p class="education-degree-heading">Data Structures and Algorithms</p>
+                            <p class="education-institute"><a href="https://udacity.com">Udacity</a></p>
+                            <p class="education-text">I have learned fundamentals of Python data structures and algorithms.</p>
+                            <p class="education-grade">Completed</p>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <p class="education-year">2014</p>
+                            <p class="education-degree">High School</p>
+                            <p>(Intermediate | HSC | XII)</p>
+                        </div>
+                        <div class="table-col">
+                            <p class="education-degree-heading">Physics, Chemistry, Mathematics, English, Physical Education</p>
+                            <p class="education-institute"><a href="www.chandrasheel.co.in">Chandrasheel Vidyapeeth, Kanti</a></p>
+                            <p class="education-text">I have completed higher secondary certification with Physics, Chemistry, Mathematics, Physical Education and English.</p>
+                            <p class="education-grade">Percentage: 71%</p>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <p class="education-year">2012</p>
+                            <p class="education-degree">High School</p>
+                            <p>(Matriculation | SSC | X)</p>
+                        </div>
+                        <div class="table-col">
+                            <p class="education-degree-heading">Primary Education</p>
+                            <p class="education-institute"><a href="davpsmuzaffarpur.com">DAV Public School, Bakhri, Muzaffarpur</a></p>
+                            <p class="education-text">I have learned basic of Science (Physics, Chemistry, Biology), Social Studies (Geography, Civics, History), Languages (English, Hindi, Sanskrit).</p>
+                            <p class="education-grade">CGPA: 10/10</p>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

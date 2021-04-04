@@ -62,6 +62,18 @@ address {
 .cover--vh {
   height: 100vh; }
 
+.cover--vh-min {
+  min-height: 100vh; }
+
+.p-px--50 {
+  padding: 50px; }
+
+.p-t-px--50 {
+  padding-top: 50px; }
+
+.p-b-px--50 {
+  padding-bottom: 50px; }
+
 .pos--relative {
   position: relative; }
 
@@ -112,63 +124,211 @@ address {
   margin: 1rem auto 2rem auto; }
 
 .table {
-  display: table;
+  display: table; }
+  .table.info {
+    font-size: 1.2rem; }
+    @media (min-width: 576px) {
+      .table.info {
+        font-size: 1.5rem; } }
+    @media (min-width: 768px) {
+      .table.info {
+        font-size: 2rem; } }
+    @media (min-width: 992px) {
+      .table.info {
+        font-size: 2.5rem; } }
+    @media (min-width: 1200px) {
+      .table.info {
+        font-size: 3vw; } }
+    .table.info .table-row {
+      display: table-row;
+      line-height: 3rem;
+      margin-top: 4rem; }
+      @media (max-width: 576px) {
+        .table.info .table-row {
+          display: block;
+          line-height: 1.5rem;
+          margin-top: 2rem; } }
+      .table.info .table-row::after {
+        display: block;
+        content: ''; }
+        @media (min-width: 576px) {
+          .table.info .table-row::after {
+            margin-top: 3.5rem; } }
+        @media (min-width: 768px) {
+          .table.info .table-row::after {
+            margin-top: 4rem; } }
+        @media (min-width: 992px) {
+          .table.info .table-row::after {
+            margin-top: 4.5rem; } }
+        @media (min-width: 1200px) {
+          .table.info .table-row::after {
+            margin-top: 5rem; } }
+    .table.info .table-col {
+      display: table-cell;
+      width: 100%; }
+      @media (max-width: 576px) {
+        .table.info .table-col {
+          display: block; } }
+      .table.info .table-col ul {
+        list-style: none; }
+        .table.info .table-col ul li {
+          display: inline-block; }
+          @media (min-width: 576px) {
+            .table.info .table-col ul li {
+              line-height: 4rem; } }
+          .table.info .table-col ul li::after {
+            content: ','; }
+      .table.info .table-col:first-child::after {
+        content: ':';
+        padding-left: 10px;
+        padding-right: 10px; }
+  .table.education {
+    font-size: 1.2rem; }
+    @media (min-width: 576px) {
+      .table.education {
+        font-size: 1rem; } }
+    @media (min-width: 768px) {
+      .table.education {
+        font-size: 1.2rem; } }
+    @media (min-width: 992px) {
+      .table.education {
+        font-size: 1.5rem; } }
+    @media (min-width: 1200px) {
+      .table.education {
+        font-size: 1.5vw; } }
+    .table.education .table-row {
+      display: table-row;
+      line-height: 3rem;
+      margin-top: 4rem; }
+      @media (max-width: 576px) {
+        .table.education .table-row {
+          display: block;
+          line-height: 1.5rem;
+          margin-top: 2rem; } }
+      .table.education .table-row::after {
+        display: block;
+        content: ''; }
+        @media (min-width: 576px) {
+          .table.education .table-row::after {
+            margin-top: 3.5rem; } }
+        @media (min-width: 768px) {
+          .table.education .table-row::after {
+            margin-top: 4rem; } }
+        @media (min-width: 992px) {
+          .table.education .table-row::after {
+            margin-top: 4.5rem; } }
+        @media (min-width: 1200px) {
+          .table.education .table-row::after {
+            margin-top: 5rem; } }
+    .table.education .table-col {
+      display: table-cell; }
+      .table.education .table-col:first-child {
+        width: 45%; }
+      @media (max-width: 576px) {
+        .table.education .table-col {
+          display: block; } }
+      .table.education .table-col ul {
+        list-style: none; }
+        .table.education .table-col ul li {
+          display: inline-block; }
+          @media (min-width: 576px) {
+            .table.education .table-col ul li {
+              line-height: 4rem; } }
+          .table.education .table-col ul li::after {
+            content: ','; }
+
+.education-year {
   font-size: 1.2rem; }
   @media (min-width: 576px) {
-    .table {
-      font-size: 1.5rem; } }
+    .education-year {
+      font-size: 1.2rem; } }
   @media (min-width: 768px) {
-    .table {
+    .education-year {
+      font-size: 1.2rem; } }
+  @media (min-width: 992px) {
+    .education-year {
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
+    .education-year {
+      font-size: 1.2vw; } }
+
+.education-degree {
+  font-size: 2rem; }
+  @media (min-width: 576px) {
+    .education-degree {
+      font-size: 2rem; } }
+  @media (min-width: 768px) {
+    .education-degree {
       font-size: 2rem; } }
   @media (min-width: 992px) {
-    .table {
-      font-size: 2.5rem; } }
+    .education-degree {
+      font-size: 2rem; } }
   @media (min-width: 1200px) {
-    .table {
-      font-size: 3vw; } }
-  .table .table-row {
-    display: table-row;
-    line-height: 3rem;
-    margin-top: 4rem; }
-    @media (max-width: 576px) {
-      .table .table-row {
-        display: block;
-        line-height: 1.5rem;
-        margin-top: 2rem; } }
-    .table .table-row::after {
-      display: block;
-      content: ''; }
-      @media (min-width: 576px) {
-        .table .table-row::after {
-          margin-top: 3.5rem; } }
-      @media (min-width: 768px) {
-        .table .table-row::after {
-          margin-top: 4rem; } }
-      @media (min-width: 992px) {
-        .table .table-row::after {
-          margin-top: 4.5rem; } }
-      @media (min-width: 1200px) {
-        .table .table-row::after {
-          margin-top: 5rem; } }
-  .table .table-col {
-    display: table-cell;
-    width: 100%; }
-    @media (max-width: 576px) {
-      .table .table-col {
-        display: block; } }
-    .table .table-col ul {
-      list-style: none; }
-      .table .table-col ul li {
-        display: inline-block; }
-        @media (min-width: 576px) {
-          .table .table-col ul li {
-            line-height: 4rem; } }
-        .table .table-col ul li::after {
-          content: ','; }
-    .table .table-col:first-child::after {
-      content: ':';
-      padding-left: 10px;
-      padding-right: 10px; }
+    .education-degree {
+      font-size: 2vw; } }
+
+.education-degree-heading {
+  font-size: 1.5rem; }
+  @media (min-width: 576px) {
+    .education-degree-heading {
+      font-size: 1.5rem; } }
+  @media (min-width: 768px) {
+    .education-degree-heading {
+      font-size: 1.5rem; } }
+  @media (min-width: 992px) {
+    .education-degree-heading {
+      font-size: 1.5rem; } }
+  @media (min-width: 1200px) {
+    .education-degree-heading {
+      font-size: 1.5vw; } }
+
+.education-institute a {
+  font-size: 1.2rem;
+  text-decoration: none; }
+  @media (min-width: 576px) {
+    .education-institute a {
+      font-size: 1.2rem; } }
+  @media (min-width: 768px) {
+    .education-institute a {
+      font-size: 1.2rem; } }
+  @media (min-width: 992px) {
+    .education-institute a {
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
+    .education-institute a {
+      font-size: 1.2vw; } }
+
+.education-text {
+  font-size: 1.2rem;
+  line-height: 1.6rem; }
+  @media (min-width: 576px) {
+    .education-text {
+      font-size: 1.2rem; } }
+  @media (min-width: 768px) {
+    .education-text {
+      font-size: 1.2rem; } }
+  @media (min-width: 992px) {
+    .education-text {
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
+    .education-text {
+      font-size: 1.2vw; } }
+
+.education-grade {
+  font-size: 1.2rem;
+  margin-top: 1rem; }
+  @media (min-width: 576px) {
+    .education-grade {
+      font-size: 1.2rem; } }
+  @media (min-width: 768px) {
+    .education-grade {
+      font-size: 1.2rem; } }
+  @media (min-width: 992px) {
+    .education-grade {
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
+    .education-grade {
+      font-size: 1.2vw; } }
 
 #theme-settings {
   position: fixed;
@@ -284,3 +444,23 @@ address {
     .info-container #self-analysis-text {
       font-size: 2vw;
       line-height: 3rem; } }
+
+a.contact-info {
+  text-decoration: none;
+  line-height: 2rem; }
+  @media (min-width: 576px) {
+    a.contact-info {
+      font-size: 2rem;
+      line-height: 2.2rem; } }
+  @media (min-width: 768px) {
+    a.contact-info {
+      font-size: 1.5rem;
+      line-height: 2.4rem; } }
+  @media (min-width: 992px) {
+    a.contact-info {
+      font-size: 2rem;
+      line-height: 2.8rem; } }
+  @media (min-width: 1200px) {
+    a.contact-info {
+      font-size: 3vw;
+      line-height: 4rem; } }
