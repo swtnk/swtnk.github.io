@@ -131,15 +131,26 @@ a.link:hover {
     place-items: center; }
 
 .open-to-work {
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  font-size: 2rem; }
 
 .text-container {
   padding: 20px; }
   .text-container .closing-text {
     font-size: 2rem; }
+  .text-container .closing-text-2 {
+    font-size: 1.2rem;
+    margin-top: 2rem; }
 
 .text-big {
   font-size: 3rem; }
+
+.text-blue {
+  color: #3d7fc5; }
+
+.text-footer {
+  font-size: 2rem;
+  margin-top: 1rem; }
 
 .text-align--center {
   text-align: center; }
