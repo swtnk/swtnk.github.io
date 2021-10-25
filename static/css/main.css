@@ -781,6 +781,7 @@ a.link:hover {
 
 #introduction {
   position: relative;
+  min-height: 650px;
   z-index: 9; }
   #introduction #particles {
     position: absolute;
@@ -911,9 +912,8 @@ a.contact-info {
 
 .download-resume {
   display: inline-block;
-  position: fixed;
-  top: 1.5rem;
-  right: 1rem;
+  position: absolute;
+  bottom: 4rem;
   padding: 10px 25px;
   background-color: #1378c7;
   color: white;
