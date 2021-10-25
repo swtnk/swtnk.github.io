@@ -11,7 +11,9 @@
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  user-select: none;
+}
 
 :root {
   font-size: 16px; }
@@ -909,8 +911,9 @@ a.contact-info {
 
 .download-resume {
   display: inline-block;
-  position: absolute;
-  bottom: 7rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1rem;
   padding: 10px 25px;
   background-color: #1378c7;
   color: white;
