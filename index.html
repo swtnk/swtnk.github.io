@@ -1,262 +1,479 @@
 <!DOCTYPE html>
-<html lang="en" theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#999999"/>
-    <meta name="description" content="I believe I am a good learner and describe myself as a lifelong learner and implementer. Very keen to use my technical and managing skills as well as learning for the betterment of software industry by keeping mutual growth in mind. I have two years of corporate experience in software development and scripting which includes various web development projects in different technologies and frameworks like Django (Python), Laravel (PHP), Yii (PHP) and other frameworks like RASA (AI chatbot). - SWETANK SUBHAM .">
-    <meta name="keywords" content="Swetank, Subham, Swetank Subham, HTML, CSS, JavaScript, Python, Python3, Learning, Info, Information, Contact, Education, Employement, Skills, Markdown, PHP, Go Lang, Go, Go Language, Django, RASA, Laravel, Yii2, MySQL, Linux, Training, Saturday, Sunday, opportunity">
-    <meta name="author" content="Swetank Subham">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://swetanksubham.com/">
-    <title>Swetank Subham</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&family=Saira+Condensed&family=Train+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./static/css/main.css">
-</head>
-<body>
-    <span id="theme-settings"><button id="theme-switch">&#127763;</button></span>
-    <section class="info-section" id="section-main">
-        <main class="d--flex align-items--center justify-content--center flex-direction--column" id="introduction">
-            <div id="particles"></div>
-            <span id="date-time"></span>
-            <span class="text-container">
-                <label for="intro-text">I am</label>
-                <h1 id="intro-text">Swetank Subham</h1>
-                <div id="mantra-container" class="text-align--right">
-                    <span id="mantra">My mantra: <strong>First take away from any event should be learning.</strong></span>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Swetank Subham</title>
+        <!-- MDB icon -->
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="./static/vendor/fa/css/all.min.css" />
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"/>
+        <!-- MDB CSS-->
+        <link rel="stylesheet" href="./static/vendor/mdb/css/mdb.min.css" />
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="./static/app/css/app.css">
+        <script type="text/javascript" src="./static/vendor/moment/moment-with-locales.min.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <!--Main Navigation-->
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand">swetanksubham.com</a>
+                    <div class="collapse navbar-collapse" id="navbarExample01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="#home"><i class="fa fa-home"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#introduction"><i class="fa fa-user"></i> Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact"><i class="fa fa-address-card"></i> Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education"><i class="fa fa-user-graduate"></i> Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#employement"><i class="fa fa-laptop-code"></i> Employement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills"><i class="fa fa-brain"></i> Skills</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item me-3 me-lg-1">
+                                <a class="nav-link d-sm-flex align-items-sm-center" target="_blank" href="./static/media/doc/swetank_subham_resume_v2.pdf" download="swetank_subham_resume">
+                                    <i class="fa fa-download"></i>
+                                    <strong class="d-none d-sm-block ms-1"> Resume</strong>
+                                </a>
+                            </li>
+                          </ul>
+                    </div>
                 </div>
-                <div class="social-icon-container" class="text-align--center">
-                    <a class="social-icon icon-linkedin" target="_blank" href="https://www.linkedin.com/in/swetank-subham/"><i class="fab fa-linkedin"></i></a>
-                    <a class="social-icon icon-github" target="_blank" href="https://github.com/swtnk"><i class="fab fa-github"></i></a>
-                    <a class="social-icon icon-facebook" target="_blank" href="https://www.facebook.com/shwetankshubham.roy"><i class="fab fa-facebook-square"></i></a>
-                    <a class="social-icon icon-instagram" target="_blank" href="https://www.instagram.com/imswetank/"><i class="fab fa-instagram"></i></a>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--Main Navigation-->
+        
+        <!--Main layout-->
+        <main>
+
+            <section class="d-block fh" id="home">
+                <div class="container fh">
+                    <div class="row">
+                        <div class="col-md-6 fh d-flex align-items-center">
+                            <div>
+                                <h1 class="display-1 text-uppercase"><strong>Swetank Subham</strong></h1>
+                                <span class="d-block intro-underline"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 fh d-flex align-items-center">
+                            <div>
+                                <h5>I am a</h5>
+                                <h4 class="display-4"><strong>Software Developer</strong></h4>
+                                <h5>And, I am good at</h5>
+                                <div class="skills">
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-python fa-fw skill-icon"></i>Python</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fas fa-terminal fa-fw skill-icon"></i>Shell Scripting</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-js-square fa-fw skill-icon"></i>JavaScript</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-git-alt fa-fw skill-icon"></i>Git</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-jira fa-fw skill-icon"></i>Jira</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-linux fa-fw skill-icon"></i>Linux</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-docker fa-fw skill-icon"></i>Docker</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-html5 fa-fw skill-icon"></i>HTML</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-css3-alt fa-fw skill-icon"></i>CSS</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-php fa-fw skill-icon"></i>PHP</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Pandas</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Data Structures</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>OOP</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Tesseract</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Agile Methodology</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>MySQL</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>OpenCV</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>PySpark</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>RASA</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Sanic</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Apache Spark</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>JSON</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Pickle</span></h5>
+                                    <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Redis</span></h5>
+                                </div>
+                            <!-- <hr>
+                                <div>
+                                    <p class="lead intro-para"><strong>I believe, I am a good learner and describe myself as a lifelong learner and implementer. Very keen to use my technical and managing skills as well as learning for the betterment of software industry by keeping mutual growth in mind. I have two years of corporate experience in software development and scripting which includes various web development projects in different technologies and frameworks like Django (Python), Laravel (PHP), Yii (PHP) and other frameworks like RASA (AI chatbot).</strong></p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </span>
-            <a class="download-resume" target="_blank" href="./static/media/doc/swetank_subham_resume_v2.pdf" download>RESUME</a>
+            </section>
+            <section class="d-block fh" id="introduction">
+                <div class="container fh">
+                    <div class="row">
+                        <div class="col-md-12 fh d-flex align-items-center">
+                            <div>
+                                <p class="lead intro-para">
+                                    <strong>
+                                        I believe, I am a good learner and describe myself as a lifelong learner and implementer.
+                                        I am very keen to use my technical and managing skills as well as learning for the betterment
+                                        of software industry by keeping mutual growth in mind. I have around
+                                        <strong>10 months</strong> (internship) 
+                                        <strong>+ 
+                                            <script>
+                                                months = moment(new Date()).diff(moment("2019-07-01", "YYYY-MM-DD"), 'months');
+                                                document.write(Math.floor(months / 12) + ' year(s) ');
+                                                if (months % 12 > 0) {
+                                                    document.write(' and ' + (months % 12) + ' month(s)');
+                                                }
+                                            </script>
+                                        </strong> 
+                                        of corporate experience in software development and scripting which includes various web 
+                                        development projects in different technologies and frameworks like Django (Python), 
+                                        Laravel (PHP), Yii (PHP) and other frameworks like RASA (AI chatbot).
+                                    </strong>
+                                </p>
+                                <div class="text-center mt-2">
+                                    <div class="mantra">
+                                        <span><em>My Mantra</em></span>
+                                    </div>
+                                    <figure>
+                                        <blockquote class="my-mantra">
+                                          <p>
+                                            First take away from any event should be learning.
+                                          </p>
+                                        </blockquote>
+                                      </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="d-block fh" id="contact">
+                <div class="container fh">
+                    <div class="row">
+                        <div class="col-md-12 fh d-flex align-items-center">
+                            <div class="fw-p">
+                                <h2 class="mt-5 display-5"><strong>Basic Information</strong></h2>
+                                <hr>
+                                <div class="card">
+                                    <div class="card-body p-0" style="border-radius: 0.5rem;">
+                                        <div class="table info m-0">
+                                            <!-- <div class="card mt-3"> -->
+                                                <!-- <div class="card-body p-0"> -->
+                                                    <div class="table-row">
+                                                        <div class="table-col ps-5 p-2">
+                                                            <h5 class="display-7 p-0 mt-1 mb-0"><strong>Date of Birth</strong></h5>
+                                                        </div>
+                                                        <div class="table-col px-5 mt-1 small">11 Aug 1996</div>
+                                                    </div>
+                                                <!-- </div> -->
+                                            <!-- </div>
+                                            <div class="card mt-3"> -->
+                                                <!-- <div class="card-body p-0"> -->
+                                                    <div class="table-row">
+                                                        <div class="table-col ps-5 p-2">
+                                                            <h5 class="display-7 p-0 mb-0"><strong>Email</strong></h5>
+                                                        </div>
+                                                        <div class="table-col ps-5 pb-5">
+                                                            <a class="contact-info small link text-blue p-0" href="mailto:swetanksubham.r@gmail.com">swetanksubham.r@gmail.com</a>, 
+                                                            <a class="contact-info small link text-blue p-0" href="mailto:swtnk.sbhm.r@gmail.com">swtnk.sbhm.r@gmail.com</a>
+                                                        </div>
+                                                    </div>
+                                                <!-- </div> -->
+                                            <!-- </div>
+                                            <div class="card mt-3"> -->
+                                                <!-- <div class="card-body p-0"> -->
+                                                    <div class="table-row">
+                                                        <div class="table-col ps-5 p-2">
+                                                            <h5 class="display-7 p-0 mb-0"><strong>Phone</strong></h5>
+                                                        </div>
+                                                        <div class="table-col ps-5">
+                                                            <a class="contact-info small link text-blue p-0" href="tel:+919110090019">+91(IN) 9110-09-0019</a>
+                                                        </div>
+                                                    </div>
+                                                <!-- </div> -->
+                                            <!-- </div>
+                                            <div class="card mt-3"> -->
+                                                <!-- <div class="card-body p-0"> -->
+                                                    <div class="table-row">
+                                                        <div class="table-col ps-5 p-2 pb-0 mb-0">
+                                                            <h5 class="display-7 p-0 mb-0"><strong>Address</strong></h5>
+                                                        </div>
+                                                        <div class="table-col ps-5">
+                                                            <address class="contact-info small p-0">Muzaffarpur, Bihar, India</address>
+                                                        </div>
+                                                    </div>
+                                                <!-- </div> -->
+                                            <!-- </div>
+                                            <div class="card mt-3"> -->
+                                                <!-- <div class="card-body p-0"> -->
+                                                    <div class="table-row">
+                                                        <div class="table-col ps-5 p-2">
+                                                            <h5 class="display-7 p-0 mb-0"><strong>Languages</strong></h5>
+                                                        </div>
+                                                        <div class="table-col ps-5">
+                                                            <a class="contact-info small p-0" href="javascript:void();">English</a>, 
+                                                            <a class="contact-info small p-0" href="javascript:void();">Hindi</a>
+                                                        </div>
+                                                    </div>
+                                                <!-- </div> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="d-block fh" id="education">
+                <div class="container fh">
+                    <div class="row">
+                        <div class="col-md-12 fh d-flex align-items-center">
+                            <div>
+                                <h2 class="mt-5 display-5"><strong>Education</strong></h2>
+                                <hr>
+                                <div class="table education">
+                                    <div class="card mt-3">
+                                        <div class="card-body p-0">
+                                            <div class="table-row">
+                                                <div class="table-col px-5 py-2">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>2015-2019</small></p>
+                                                    <h4 class="pt-0 px-0 education-degree">Bachelor's Degree</h4>
+                                                </div>
+                                                <div class="table-col px-5">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><strong>Bachelor of Technology | Computer Science and Engineering</strong></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a target="_blank" class="link text-blue" href="https://lpu.in"><small>Lovely Professional University, Punjab</small></a></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Graduated in Computer Science and Technology with Android Development as minor.</p>
+                                                    <p class="pb-0 pt-0 px-0 education-grade">CGPA: <span class="grade-value">8.05</span>/10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body p-0">
+                                            <div class="table-row">
+                                                <div class="table-col px-5 py-2">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>2018</small></p>
+                                                    <h4 class="pb-0 pt-0 px-0 education-degree">Nanodegree</h4>
+                                                    <p class="pb-0 pt-0 px-0"><small>(MOOCs)</small></p>
+                                                </div>
+                                                <div class="table-col px-5">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><strong>Data Structures and Algorithms</strong></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a target="_blank" class="link text-blue" href="https://udacity.com"><small>Udacity</small></a></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 lead education-text">I have learned fundamentals of Python data structures and algorithms.</p>
+                                                    <p class="pb-0 pt-0 px-0 education-grade">Completed</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body p-0">
+                                            <div class="table-row">
+                                                <div class="table-col px-5 py-2">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>2014</small></p>
+                                                    <h4 class="pb-0 pt-0 px-0 education-degree">High School</h4>
+                                                    <p class="pb-0 pt-0 px-0"><small>(Intermediate | HSC | XII)</small></p>
+                                                </div>
+                                                <div class="table-col px-5">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><strong>Physics, Chemistry, Mathematics, English, Physical Education</strong></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a target="_blank" class="link text-blue" href="https://www.chandrasheel.co.in"><small>Chandrasheel Vidyapeeth, Kanti</small></a></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 lead education-text">I have completed higher secondary certification with Physics, Chemistry, Mathematics, Physical Education and English.</p>
+                                                    <p class="pb-0 pt-0 px-0 education-grade">Percentage: <span class="grade-value">71</span>%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body p-0">
+                                            <div class="table-row">
+                                                <div class="table-col px-5 py-2">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>2012</small></p>
+                                                    <h4 class="pb-0 pt-0 px-0 education-degree">High School</h4>
+                                                    <p class="pb-0 pt-0 px-0"><small>(Matriculation | SSC | X)</small></p>
+                                                </div>
+                                                <div class="table-col px-5">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><strong>Primary Education</strong></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a target="_blank" class="link text-blue" href="http://davpsmuzaffarpur.com"><small>DAV Public School, Bakhri, Muzaffarpur</small></a></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 lead education-text">I have learned basics of Science (Physics, Chemistry, Biology), Social Studies (Geography, Civics, History), Languages (English, Hindi, Sanskrit).</p>
+                                                    <p class="pb-0 pt-0 px-0 education-grade">CGPA: <span class="grade-value">10</span>/10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="d-block fh" id="employement">
+                <div class="container fh">
+                    <div class="row">
+                        <div class="col-md-12 fh d-flex align-items-center">
+                            <div>
+                                <h2 class="mt-5 display-5"><strong>Employement</strong></h2>
+                                <hr>
+                                <div class="table education">
+                                    <div class="card mt-3">
+                                        <div class="card-body p-0">
+                                            <div class="table-row">
+                                                <div class="table-col px-5 py-2">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>Sep 2021 - Present</small></p>
+                                                    <h4 class="pt-0 px-0 education-degree">Software Developer</h4>
+                                                </div>
+                                                <div class="table-col px-5">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><strong>Knowlarity Communications</strong></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><small>Gurugram, Haryana, India</small></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a target="_blank" class="link text-blue" href="https://www.knowlarity.com/"><small>https://www.knowlarity.com/</small></a></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Working as Software Developer. Role includes developing backend applications.</p>
+                                                    <p class="pb-0 pt-0 px-0 education-grade"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body p-0">
+                                            <div class="table-row">
+                                                <div class="table-col px-5 py-2">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>Jul 2019 - Sep 2021</small></p>
+                                                    <h4 class="pb-0 pt-0 px-0 education-degree">Software Engineer</h4>
+                                                </div>
+                                                <div class="table-col px-5">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><strong>Great Software Laboratory</strong></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><small>Baner, Pune, Maharashtra, India</small></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a target="_blank" class="link text-blue" href="https://gslab.com/"><small>https://gslab.com/</small></a></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Worked as full-stack web developer. Role includes application development, management, and deployment to the production servers.</p>
+                                                    <p class="pb-0 pt-0 px-0 education-grade"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body p-0">
+                                            <div class="table-row">
+                                                <div class="table-col px-5 py-2">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>Aug 2018 - June 2019</small></p>
+                                                    <h4 class="pb-0 pt-0 px-0 education-degree">Software Engineer</h4>
+                                                    <p class="pb-0 pt-0 px-0"><small>(Intern)</small></p>
+                                                </div>
+                                                <div class="table-col px-5">
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><strong>Great Software Laboratory</strong></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading"><small>Baner, Pune, Maharashtra, India</small></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a target="_blank" class="link text-blue" href="https://gslab.com/"><small>https://gslab.com/</small></a></p>
+                                                    <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Worked as Software Engineer Intern. Role includes developing web applications.</p>
+                                                    <p class="pb-0 pt-0 px-0 education-grade"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="d-block fh" id="skills">
+                <div class="container fh">
+                    <div class="row">
+                        <div class="col-md-12 fh d-flex align-items-center">
+                            <div class="fw-p">
+                                <h2 class="mt-5 display-5"><strong>Skills</strong></h2>
+                                <hr>
+                                <div class="table education">
+                                    <div class="card">
+                                        <div class="card-body p-0">
+                                            <div class="table-row">
+                                                <div class="table-col">
+                                                    <p class="skills-header header-6 small ps-5">Markup Language(s)</p>
+                                                </div>
+                                                <div class="table-col">
+                                                    <p class="skills-name header-6 small ps-5">HTML5, Markdown</p>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="table-col">
+                                                    <p class="skills-header header-6 small ps-5">Programming Language(s)</p>
+                                                </div>
+                                                <div class="table-col">
+                                                    <p class="skills-name header-6 small ps-5">Python 3, Javascript, PHP, Go Lang</p>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="table-col">
+                                                    <p class="skills-header header-6 small ps-5">Programming Framework(s)</p>
+                                                </div>
+                                                <div class="table-col">
+                                                    <p class="skills-name header-6 small ps-5">Django, RASA, Laravel, Yii2</p>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="table-col">
+                                                    <p class="skills-header header-6 small ps-5">Database(s)</p>
+                                                </div>
+                                                <div class="table-col">
+                                                    <p class="skills-name header-6 small ps-5">MySQL</p>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="table-col">
+                                                    <p class="skills-header header-6 small ps-5">Operating System(s)</p>
+                                                </div>
+                                                <div class="table-col">
+                                                    <p class="skills-name header-6 small ps-5">Linux</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="d-block fh">
+                <div class="container fh">
+                    <div class="row">
+                        <div class="col-sm-12 fh d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <h3 class="display-1 text-uppercase"><strong>Open to better opportunities</strong></h3>
+                                <h4 class="mt-4">Thanks & Regards</h4>
+                                <h3 class="display-6 text-uppercase"><strong>Swetank Subham</strong></h3>
+                                <!-- <span class="d-block intro-underline"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         </main>
-    </section>
-    <section class="info-section info-container p-t-px--50 p-b-px--50" id="section-self-analysis">
-        <div class="cover--vh-min d--flex align-items--center justify-content--center flex-direction--column" id="self-analysis">
-            <span class="text-container">
-                <label for="self-analysis-text"><strong>Profile Cover</strong></label>
-                <div class="divider"></div>
-                <p id="self-analysis-text" class="text-align--justify">I believe I am a good learner and describe myself as a lifelong learner and implementer. Very keen to use my technical and managing skills as well as learning for the betterment of software industry by keeping mutual growth in mind. I have two years of corporate experience in software development and scripting which includes various web development projects in different technologies and frameworks like Django (Python), Laravel (PHP), Yii (PHP) and other frameworks like RASA (AI chatbot).</p>
-            </span>
-        </div>
-    </section>
-    <section class="info-section info-container p-t-px--50 p-b-px--50" id="section-about">
-        <div class="cover--vh-min d--flex align-items--center justify-content--center flex-direction--column" id="self-analysis">
-            <span class="text-container">
-                <label for="self-analysis-text"><strong>Basic information</strong></label>
-                <div class="divider"></div>
-                <div class="table info">
-                    <div class="table-row">
-                        <div class="table-col">Date of Birth</div>
-                        <div class="table-col">11 Aug 1996</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">Email</div>
-                        <div class="table-col">
-                            <a class="contact-info link text-blue" href="mailto:swetanksubham.r@gmail.com">swetanksubham.r@gmail.com</a>, 
-                            <a class="contact-info link text-blue" href="mailto:swtnk.sbhm.r@gmail.com">swtnk.sbhm.r@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">Phone</div>
-                        <div class="table-col">
-                            <a class="contact-info link text-blue" href="tel:+919110090019">+91(IN) 9110-09-0019</a>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">Address</div>
-                        <div class="table-col">
-                            <address>Muzaffarpur, Bihar, India</address>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">Language</div>
-                        <div class="table-col">
-                            <a class="contact-info" href="javascript:void();">English</a>, 
-                            <a class="contact-info" href="javascript:void();">Hindi</a>
-                        </div>
-                    </div>
-                </div>
-            </span>
-        </div>
-    </section>
-    <section class="info-section info-container p-t-px--50 p-b-px--50" id="section-education">
-        <div class="cover--vh-min d--flex align-items--center justify-content--center flex-direction--column" id="education">
-            <span class="text-container">
-                <label for="self-analysis-text"><strong>Education</strong></label>
-                <div class="divider"></div>
-                <div class="table education">
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="education-year">2015-2019</p>
-                            <p class="education-degree">Bachelor's Degree</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="education-degree-heading">Bachelor of Technology | Computer Science and Engineering</p>
-                            <p class="education-institute"><a target="_blank"class="link text-blue" href="https://lpu.in">Lovely Professional University, Punjab</a></p>
-                            <p class="education-text">Graduated in Computer Science and Technology with Android Development as minor.</p>
-                            <p class="education-grade">CGPA: <span class="grade-value">8.05</span>/10</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="education-year">2018</p>
-                            <p class="education-degree">Nanodegree</p>
-                            <p>(MOOCs)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="education-degree-heading">Data Structures and Algorithms</p>
-                            <p class="education-institute"><a target="_blank" class="link text-blue" href="https://udacity.com">Udacity</a></p>
-                            <p class="education-text">I have learned fundamentals of Python data structures and algorithms.</p>
-                            <p class="education-grade">Completed</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="education-year">2014</p>
-                            <p class="education-degree">High School</p>
-                            <p>(Intermediate | HSC | XII)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="education-degree-heading">Physics, Chemistry, Mathematics, English, Physical Education</p>
-                            <p class="education-institute"><a target="_blank" class="link text-blue" href="https://www.chandrasheel.co.in">Chandrasheel Vidyapeeth, Kanti</a></p>
-                            <p class="education-text">I have completed higher secondary certification with Physics, Chemistry, Mathematics, Physical Education and English.</p>
-                            <p class="education-grade">Percentage: <span class="grade-value">71</span>%</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="education-year">2012</p>
-                            <p class="education-degree">High School</p>
-                            <p>(Matriculation | SSC | X)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="education-degree-heading">Primary Education</p>
-                            <p class="education-institute"><a target="_blank" class="link text-blue" href="http://davpsmuzaffarpur.com">DAV Public School, Bakhri, Muzaffarpur</a></p>
-                            <p class="education-text">I have learned basic of Science (Physics, Chemistry, Biology), Social Studies (Geography, Civics, History), Languages (English, Hindi, Sanskrit).</p>
-                            <p class="education-grade">CGPA: <span class="grade-value">10</span>/10</p>
-                        </div>
-                    </div>
-                </div>
-            </span>
-        </div>
-    </section>
-    <section class="info-section info-container p-t-px--50 p-b-px--50" id="section-employement">
-        <div class="cover--vh-min d--flex align-items--center justify-content--center flex-direction--column" id="education">
-            <span class="text-container">
-                <label for="self-analysis-text"><strong>Employement</strong></label>
-                <div class="divider"></div>
-                <div class="table employement">
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="employement-year">Sep 2021 - Present</p>
-                            <p class="employement-designation">Software Developer</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="employement-company"><a target="_blank" class="link text-blue" href="https://www.knowlarity.com/">Knowlarity Communications</a></p>
-                            <address class="employement-company-address">Gurugram, Haryana, India</address>
-                            <p class="employement-text">Working as Software Developer. Role includes developing backend applications.</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="employement-year">Jul 2019 - Sep 2021</p>
-                            <p class="employement-designation">Software Engineer</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="employement-company"><a target="_blank" class="link text-blue" href="https://gslab.com">Great Software Laboratory</a></p>
-                            <address class="employement-company-address">Baner, Pune, Maharashtra, India</address>
-                            <p class="employement-text">Worked as full-stack web developer. Role includes application development, management, and deployment to the production servers.</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="employement-year">Aug 2018 - June 2019</p>
-                            <p class="employement-designation">Software Engineer</p>
-                            <p>(Intern)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="employement-company"><a target="_blank" class="link text-blue" href="https://gslab.com">Great Software Laboratory</a></p>
-                            <address class="employement-company-address">Baner, Pune, Maharashtra, India</address>
-                            <p class="employement-text">Worked as Software Engineer Intern. Role includes developing web applications.</p>
-                        </div>
-                    </div>
-                </div>
-            </span>
-        </div>
-    </section>
-    <section class="info-section info-container p-t-px--50 p-b-px--50" id="section-skill">
-        <div class="cover--vh-min d--flex align-items--center justify-content--center flex-direction--column" id="education">
-            <span class="text-container">
-                <label for="self-analysis-text"><strong>Skills</strong></label>
-                <div class="divider"></div>
-                <div class="table employement">
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="skills-header">Markup Language(s)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="skills-name">HTML5, Markdown</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="skills-header">Programming Language(s)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="skills-name">Python 3, Javascript, PHP, Go Lang</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="skills-header">Programming Framework(s)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="skills-name">Django, RASA, Laravel, Yii2</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="skills-header">Database(s)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="skills-name">MySQL</p>
-                        </div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-col">
-                            <p class="skills-header">Operating System(s)</p>
-                        </div>
-                        <div class="table-col">
-                            <p class="skills-name">Linux</p>
-                        </div>
-                    </div>
-                </div>
-            </span>
-        </div>
-    </section>
-    <section class="info-section" id="section-footer">
-        <footer class="d--flex align-items--center cover--vh-min justify-content--center flex-direction--column" id="footer">
-            <div id="particles"></div>
-            <span id="date-time"></span>
-            <!-- <span class="text-container">
-                <label class="closing-text">Need a software developer or tutor/trainer? Contact me.</label>
-                <h2 class="text-footer">I am <stron class="text-blue">available</stron> on phone on <strong class="text-blue">Saturdays</strong> and <strong class="text-blue">Sundays</strong> between <strong class="text-blue">10 AM</strong> and <strong class="text-blue">6 PM (IST)</strong></h2>
-                <div class="closing-text-2">Trainings available in Python 3, Javascript, HTML5, CSS3, Django</div>
-            </span> -->
-            <h2 class="text-align--center open-to-work">Open to better opportunities</h2>
-            <h3 class="open-to-work">Thanks & Regards</h3>
-            <h2 class="employement-designation">Swetank Subham</h2>
+        <!--Main layout-->
+        
+        <!--Footer-->
+        <footer>
+            
         </footer>
-    </section>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./static/javascript/main.js"></script>
-</body>
+        <!--Footer-->
+        
+        <!-- MDB JavaScript -->
+        <script type="text/javascript" src="./static/vendor/mdb/js/mdb.min.js"></script>
+        <!-- Custom scripts -->
+        <script type="text/javascript" src="./static/app/js/app.js"></script>
+        <script type="text/javascript">
+            
+        </script>
+    </body>
 </html>
+    
