@@ -1,3 +1,6 @@
+* {
+    user-select: none;
+}
 .table .table-info {
     all: unset;
 }
