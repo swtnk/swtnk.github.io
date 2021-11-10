@@ -198,8 +198,8 @@ blockquote.my-mantra:after {
 }
 .table.education .table-col:first-child {
     width: 25vw;
-    background-color: #f3f3f3;
-    background: linear-gradient(90deg, #f3f3f3, transparent);
+    /* background-color: #f3f3f3; */
+    /* background: linear-gradient(90deg, #f3f3f3, transparent); */
     color: #464444;
     border-radius: 0.5rem 0 0 0.5rem;
     /* padding: 1rem; */
@@ -207,19 +207,26 @@ blockquote.my-mantra:after {
 .table.education .table-col:nth-child(2) {
     /* width: 100%; */
     background-color: #f3f3f3;
-    background: linear-gradient(90deg, transparent, #f3f3f3, transparent);
+    /* background: linear-gradient(90deg, transparent, #f3f3f3, transparent); */
     color: #464444;
     /* border-radius: 0.5rem 0 0 0.5rem; */
     /* padding: 1rem; */
 }
 .table.education .table-col:last-child {
     padding-bottom: 1rem;
+    min-width: 75%;
+    width: 75%;
 }
 @media (max-width: 576px) {
     .table.education .table-col {
         display: block;
     }
     .table.education .table-col:first-child {
+        width: 100%;
+    }
+    .table.education .table-col:last-child {
+        padding-bottom: 1rem;
+        min-width: 100%;
         width: 100%;
     }
 }
@@ -310,11 +317,14 @@ blockquote.my-mantra:after {
 
 .table.info .table-col:first-child {
     min-width: 25vw;
-    background: linear-gradient(90deg, #f3f3f3, transparent);
+    /* background: linear-gradient(90deg, #f3f3f3, transparent); */
     /* border-radius: 0.5rem 0 0 0.5rem; */
 }
 .table.info .table-col:nth-child(2) {
-    background: linear-gradient(90deg, transparent, #f3f3f3, transparent);
+    background: #f3f3f3;
+    min-width: 75%;
+    width: 75%;
+    /* background: linear-gradient(90deg, transparent, #f3f3f3, transparent); */
 }
 @media (max-width: 560px) {
     .table.education .table-col:nth-child(2) {
@@ -326,6 +336,12 @@ blockquote.my-mantra:after {
     }
 }
 @media (max-width: 576px) {
+    .table.info .table-col:nth-child(2) {
+        background: #f3f3f3;
+        min-width: 100%;
+        width: 100%;
+        /* background: linear-gradient(90deg, transparent, #f3f3f3, transparent); */
+    }
     .table.info .table-col {
         display: block;
    }
@@ -398,7 +414,7 @@ blockquote.my-mantra:after {
 }
 .skills-name {
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -414,17 +430,17 @@ blockquote.my-mantra:after {
 }
 @media (min-width: 768px) {
     .skills-name {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
    }
 }
 @media (min-width: 992px) {
     .skills-name {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
    }
 }
 @media (min-width: 1200px) {
     .skills-name {
-        font-size: 1.8vw;
+        font-size: 1.6vw;
    }
 }
 @media (max-width: 576px) {
