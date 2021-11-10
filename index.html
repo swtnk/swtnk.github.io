@@ -21,9 +21,6 @@
         <!-- Custom styles -->
         <link rel="stylesheet" href="./static/app/css/app.css">
         <script type="text/javascript" src="./static/vendor/moment/moment-with-locales.min.js"></script>
-        <style>
-            
-        </style>
     </head>
     <body>
         <!--Main Navigation-->
@@ -73,7 +70,6 @@
         
         <!--Main layout-->
         <main>
-
             <section class="d-block fh" id="home">
                 <div class="container fh">
                     <div class="row">
@@ -86,7 +82,7 @@
                         <div class="col-md-6 fh d-flex align-items-center">
                             <div>
                                 <h5>I am a</h5>
-                                <h4 class="display-4"><strong>Software Developer</strong></h4>
+                                <h4 class="display-4"><strong id="typewriter">Software Developer</strong></h4>
                                 <h5>And, I am good at</h5>
                                 <div class="skills">
                                     <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-python fa-fw skill-icon"></i>Python</span></h5>
@@ -114,10 +110,6 @@
                                     <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Pickle</span></h5>
                                     <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Redis</span></h5>
                                 </div>
-                            <!-- <hr>
-                                <div>
-                                    <p class="lead intro-para"><strong>I believe, I am a good learner and describe myself as a lifelong learner and implementer. Very keen to use my technical and managing skills as well as learning for the betterment of software industry by keeping mutual growth in mind. I have two years of corporate experience in software development and scripting which includes various web development projects in different technologies and frameworks like Django (Python), Laravel (PHP), Yii (PHP) and other frameworks like RASA (AI chatbot).</strong></p>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -158,7 +150,7 @@
                                             First take away from any event should be learning.
                                           </p>
                                         </blockquote>
-                                      </figure>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -175,66 +167,46 @@
                                 <div class="card">
                                     <div class="card-body p-0" style="border-radius: 0.5rem;">
                                         <div class="table info m-0">
-                                            <!-- <div class="card mt-3"> -->
-                                                <!-- <div class="card-body p-0"> -->
-                                                    <div class="table-row">
-                                                        <div class="table-col ps-5 p-2">
-                                                            <h5 class="display-7 p-0 mt-1 mb-0"><strong>Date of Birth</strong></h5>
-                                                        </div>
-                                                        <div class="table-col px-5 mt-1 small">11 Aug 1996</div>
-                                                    </div>
-                                                <!-- </div> -->
-                                            <!-- </div>
-                                            <div class="card mt-3"> -->
-                                                <!-- <div class="card-body p-0"> -->
-                                                    <div class="table-row">
-                                                        <div class="table-col ps-5 p-2">
-                                                            <h5 class="display-7 p-0 mb-0"><strong>Email</strong></h5>
-                                                        </div>
-                                                        <div class="table-col ps-5 pb-5">
-                                                            <a class="contact-info small link text-blue p-0" href="mailto:swetanksubham.r@gmail.com">swetanksubham.r@gmail.com</a>, 
-                                                            <a class="contact-info small link text-blue p-0" href="mailto:swtnk.sbhm.r@gmail.com">swtnk.sbhm.r@gmail.com</a>
-                                                        </div>
-                                                    </div>
-                                                <!-- </div> -->
-                                            <!-- </div>
-                                            <div class="card mt-3"> -->
-                                                <!-- <div class="card-body p-0"> -->
-                                                    <div class="table-row">
-                                                        <div class="table-col ps-5 p-2">
-                                                            <h5 class="display-7 p-0 mb-0"><strong>Phone</strong></h5>
-                                                        </div>
-                                                        <div class="table-col ps-5">
-                                                            <a class="contact-info small link text-blue p-0" href="tel:+919110090019">+91(IN) 9110-09-0019</a>
-                                                        </div>
-                                                    </div>
-                                                <!-- </div> -->
-                                            <!-- </div>
-                                            <div class="card mt-3"> -->
-                                                <!-- <div class="card-body p-0"> -->
-                                                    <div class="table-row">
-                                                        <div class="table-col ps-5 p-2 pb-0 mb-0">
-                                                            <h5 class="display-7 p-0 mb-0"><strong>Address</strong></h5>
-                                                        </div>
-                                                        <div class="table-col ps-5">
-                                                            <address class="contact-info small p-0">Muzaffarpur, Bihar, India</address>
-                                                        </div>
-                                                    </div>
-                                                <!-- </div> -->
-                                            <!-- </div>
-                                            <div class="card mt-3"> -->
-                                                <!-- <div class="card-body p-0"> -->
-                                                    <div class="table-row">
-                                                        <div class="table-col ps-5 p-2">
-                                                            <h5 class="display-7 p-0 mb-0"><strong>Languages</strong></h5>
-                                                        </div>
-                                                        <div class="table-col ps-5">
-                                                            <a class="contact-info small p-0" href="javascript:void();">English</a>, 
-                                                            <a class="contact-info small p-0" href="javascript:void();">Hindi</a>
-                                                        </div>
-                                                    </div>
-                                                <!-- </div> -->
-                                            <!-- </div> -->
+                                            <div class="table-row">
+                                                <div class="table-col ps-5 p-2">
+                                                    <h5 class="display-7 p-0 mt-1 mb-0"><strong>Date of Birth</strong></h5>
+                                                </div>
+                                                <div class="table-col px-5 mt-1 small">11 Aug 1996</div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="table-col ps-5 p-2">
+                                                    <h5 class="display-7 p-0 mb-0"><strong>Email</strong></h5>
+                                                </div>
+                                                <div class="table-col ps-5 pb-5">
+                                                    <a class="contact-info small link text-blue p-0" href="mailto:swetanksubham.r@gmail.com">swetanksubham.r@gmail.com</a>, 
+                                                    <a class="contact-info small link text-blue p-0" href="mailto:swtnk.sbhm.r@gmail.com">swtnk.sbhm.r@gmail.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="table-col ps-5 p-2">
+                                                    <h5 class="display-7 p-0 mb-0"><strong>Phone</strong></h5>
+                                                </div>
+                                                <div class="table-col ps-5">
+                                                    <a class="contact-info small link text-blue p-0" href="tel:+919110090019">+91(IN) 9110-09-0019</a>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="table-col ps-5 p-2 pb-0 mb-0">
+                                                    <h5 class="display-7 p-0 mb-0"><strong>Address</strong></h5>
+                                                </div>
+                                                <div class="table-col ps-5">
+                                                    <address class="contact-info small p-0">Muzaffarpur, Bihar, India</address>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="table-col ps-5 p-2">
+                                                    <h5 class="display-7 p-0 mb-0"><strong>Languages</strong></h5>
+                                                </div>
+                                                <div class="table-col ps-5">
+                                                    <a class="contact-info small p-0" href="javascript:void();">English</a>, 
+                                                    <a class="contact-info small p-0" href="javascript:void();">Hindi</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -475,7 +447,7 @@
         <!-- MDB JavaScript -->
         <script type="text/javascript" src="./static/vendor/mdb/js/mdb.min.js"></script>
         <!-- Custom scripts -->
-        <script type="text/javascript" src="./static/app/js/app.js"></script>
+        <script type="module" src="./static/app/js/app.js"></script>
         <script type="text/javascript">
             
         </script>
