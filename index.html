@@ -17,6 +17,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./static/vendor/fa/css/all.min.css" />
+    <link rel="stylesheet" href="./static/vendor/devicon-master/devicon.min.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <!-- MDB CSS-->
@@ -94,40 +95,27 @@
                             <h4 class="display-4"><strong id="typewriter">Software Developer</strong></h4>
                             <h5>And, I am good at</h5>
                             <div class="skills">
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-python fa-fw skill-icon"></i>Python</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fas fa-terminal fa-fw skill-icon"></i>Shell Scripting</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-js-square fa-fw skill-icon"></i>JavaScript</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-git-alt fa-fw skill-icon"></i>Git</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-jira fa-fw skill-icon"></i>Jira</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-linux fa-fw skill-icon"></i>Linux</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-docker fa-fw skill-icon"></i>Docker</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-html5 fa-fw skill-icon"></i>HTML</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-css3-alt fa-fw skill-icon"></i>CSS</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i
-                                            class="fab fa-php fa-fw skill-icon"></i>PHP</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-python fa-fw skill-icon"></i>Python</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fas fa-terminal fa-fw skill-icon"></i>Shell Scripting</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-js-square fa-fw skill-icon"></i>JavaScript</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-git-alt fa-fw skill-icon"></i>Git</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-jira fa-fw skill-icon"></i>Jira</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-linux fa-fw skill-icon"></i>Linux</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-docker fa-fw skill-icon"></i>Docker</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-html5 fa-fw skill-icon"></i>HTML</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-css3-alt fa-fw skill-icon"></i>CSS</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab fa-php fa-fw skill-icon"></i>PHP</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Pandas</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Data Structures</span>
-                                </h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Data Structures</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>OOP</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Tesseract</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Agile
-                                        Methodology</span></h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Agile Methodology</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>MySQL</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>OpenCV</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>PySpark</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>RASA</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Sanic</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Apache Spark</span>
-                                </h5>
+                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Apache Spark</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>JSON</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Pickle</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i>Redis</span></h5>
@@ -211,8 +199,15 @@
                                                 <div class="about-data-cell"><span
                                                         class="about-data-header"><strong>Date of Birth</strong></span>
                                                     11 August 1996</div>
-                                                <div class="about-data-cell"><span class="about-data-header"><strong>Age
-                                                            (Yrs)</strong></span> 25</div>
+                                                <div class="about-data-cell"><span class="about-data-header"><strong>Age</strong></span> 
+                                                            <script>
+                                                                months = moment(new Date()).diff(moment("1996-08-11", "YYYY-MM-DD"), 'months');
+                                                                document.write(Math.floor(months / 12) + ' year(s) ');
+                                                                if (months % 12 > 0) {
+                                                                    document.write(' and ' + (months % 12) + ' month(s)');
+                                                                }
+                                                            </script>
+                                                        </div>
                                                 <div class="about-data-cell"><span
                                                         class="about-data-header"><strong>Website</strong></span> <a
                                                         href="/">https://swetanksubham.com</a></div>
@@ -243,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <section class="d-block fh" id="education">
+        <section class="d-block fh mt-5" id="education">
             <div class="container fh">
                 <div class="row">
                     <div class="col-md-12 fh d-flex align-items-center">
@@ -255,7 +250,7 @@
                                     <div class="line-content">
 
                                         <div class="content">
-                                            <div class="card mt-3">
+                                            <div class="card">
                                                 <div class="card-body p-0">
                                                     <div class="table-row">
                                                         <div class="table-col px-5 py-2">
@@ -378,7 +373,7 @@
                 </div>
             </div>
         </section>
-        <section class="d-block fh" id="employement">
+        <section class="d-block fh mt-5" id="employement">
             <div class="container fh">
                 <div class="row">
                     <div class="col-md-12 fh d-flex align-items-center">
@@ -389,7 +384,7 @@
                                 <div class="line">
                                     <div class="line-content">
                                         <div class="content">
-                                            <div class="card mt-3">
+                                            <div class="card">
                                                 <div class="card-body p-0">
                                                     <div class="table-row">
                                                         <div class="table-col px-5 py-2">
@@ -487,56 +482,118 @@
                 <div class="row">
                     <div class="col-md-12 fh d-flex align-items-center">
                         <div class="fw-p">
-                            <h2 class="mt-5 display-5"><strong>Skills</strong></h2>
-                            <hr>
-                            <div class="table education">
-                                <div class="card">
-                                    <div class="card-body p-0">
-                                        <div class="table-row">
-                                            <div class="table-col">
-                                                <p class="skills-header header-6 small ps-5">Markup Language(s)</p>
-                                            </div>
-                                            <div class="table-col">
-                                                <p class="skills-name header-6 small ps-5">HTML5, Markdown</p>
-                                            </div>
-                                        </div>
-                                        <div class="table-row">
-                                            <div class="table-col">
-                                                <p class="skills-header header-6 small ps-5">Programming Language(s)</p>
-                                            </div>
-                                            <div class="table-col">
-                                                <p class="skills-name header-6 small ps-5">Python 3, Javascript, PHP, Go
-                                                    Lang</p>
-                                            </div>
-                                        </div>
-                                        <div class="table-row">
-                                            <div class="table-col">
-                                                <p class="skills-header header-6 small ps-5">Programming Framework(s)
-                                                </p>
-                                            </div>
-                                            <div class="table-col">
-                                                <p class="skills-name header-6 small ps-5">Django, RASA, Laravel, Yii2
-                                                </p>
+                            <div class="timeline">
+                                <h2>Skills</h2>
+                                <div class="line">
+                                    <div class="line-content">
+                                        <div class="content">
+                                            <div class="card">
+                                                <div class="card-body p-0">
+                                                    <div class="table-row">
+                                                        <div class="table-col px-5 py-2">
+                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Programming Language(s)</h4>
+                                                        </div>
+                                                        <div class="table-col px-5 pt-2">
+                                                            <div class="skills pb-2">
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-python-plain"></i> Python</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-javascript-plain"></i> JavaScript</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-php-plain"></i> PHP</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-go-original-wordmark"></i> Go Lang</span></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="table-row">
-                                            <div class="table-col">
-                                                <p class="skills-header header-6 small ps-5">Database(s)</p>
-                                            </div>
-                                            <div class="table-col">
-                                                <p class="skills-name header-6 small ps-5">MySQL</p>
+                                        <div class="content">
+                                            <div class="card">
+                                                <div class="card-body p-0">
+                                                    <div class="table-row">
+                                                        <div class="table-col px-5 py-2">
+                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Programming Framework(s)</h4>
+                                                        </div>
+                                                        <div class="table-col px-5 pt-2">
+                                                            <div class="skills pb-2">
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-django-plain"></i> Django</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> Sanic</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> RASA</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-laravel-plain"></i> Laravel</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-yii-plain"></i> Yii2</span></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="table-row">
-                                            <div class="table-col">
-                                                <p class="skills-header header-6 small ps-5">Operating System(s)</p>
+                                        <div class="content">
+                                            <div class="card">
+                                                <div class="card-body p-0">
+                                                    <div class="table-row">
+                                                        <div class="table-col px-5 py-2">
+                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Database(s)</h4>
+                                                        </div>
+                                                        <div class="table-col px-5 pt-2">
+                                                            <div class="skills pb-2">
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-mysql-plain"></i> MySQL</span></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="table-col">
-                                                <p class="skills-name header-6 small ps-5">Linux</p>
+                                        </div>
+                                        <div class="content">
+                                            <div class="card">
+                                                <div class="card-body p-0">
+                                                    <div class="table-row">
+                                                        <div class="table-col px-5 py-2">
+                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Operating System(s)</h4>
+                                                        </div>
+                                                        <div class="table-col px-5 pt-2">
+                                                            <div class="skills pb-2">
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-linux-plain"></i> Linux</span></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="card">
+                                                <div class="card-body p-0">
+                                                    <div class="table-row">
+                                                        <div class="table-col px-5 py-2">
+                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Markup Language(s)</h4>
+                                                        </div>
+                                                        <div class="table-col px-5 pt-2">
+                                                            <div class="skills pb-2">
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-html5-plain"></i> HTML</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-markdown-original"></i> Markdown</span></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="card">
+                                                <div class="card-body p-0">
+                                                    <div class="table-row">
+                                                        <div class="table-col px-5 py-2">
+                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Styling Language(s) / Pre-processor(s)</h4>
+                                                        </div>
+                                                        <div class="table-col px-5 pt-2">
+                                                            <div class="skills pb-2">
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-css3-plain"></i> CSS</span></h5>
+                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-sass-plain"></i> SCSS</span></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
