@@ -1,0 +1,48 @@
+{
+    "name": "Swetank Subham",
+    "experience": [
+        {
+            "company": "Knowlarity Communications Pvt. Ltd.",
+            "location": "Gurgaon",
+            "title": "Software Developer",
+            "startDate": "2021-09",
+            "endDate": "-",
+            "summary": "",
+            "description": [
+                "Working on cloud-based communications technology and digital call center like IVR."
+            ]
+        },
+        {
+            "company": "Great Software Laboratory Pvt. Ltd.",
+            "location": "Pune",
+            "title": "Software Engineer",
+            "startDate": "2019-07",
+            "endDate": "2021-09",
+            "summary": "",
+            "description": [
+                "Designed and developed several web apps.",
+                "Developed and consumed date over Restful Web Services",
+                "Deployed web apps and worked on security headers configurations in production using Apache webserver.",
+                "Perform ETL operation with pdf, excel, databases, csv.",
+                "Worked with Apache Spark for Streaming ETL.",
+                "Worked with Python Tesseract and OpenCV for OCR and image manipulation, respectively.",
+                "Worked on database schema design and implementation.",
+                "Worked with different python-based frameworks like Django, Pandas, OpenCV, Tesseract, Sanic, RASA, PySpark.",
+                "Worked with OpenStack cloud technology for VM create and management.",
+                "Worked with Docker technology for containerization of applications."
+            ]
+        },
+        {
+            "company": "Great Software Laboratory Pvt. Ltd.",
+            "location": "Pune",
+            "title": "Software Engineer (Intern)",
+            "startDate": "2018-08",
+            "endDate": "2019-06",
+            "summary": "",
+            "description": [
+                "Worked on several web apps and developed one from scratch.",
+                "Worked with MySQL database."
+            ]
+        }
+    ]
+}
