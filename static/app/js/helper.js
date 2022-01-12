@@ -1,4 +1,5 @@
 const typeWriter = (text, index, element, letterDuration, sentenceDuration, restartIn, fnCallback) => {
+    element.classList.add('typing');
     if (index < (text.length)) {
         element.innerHTML = text.substring(0, index + 1) + '<span class="blink" aria-hidden="true"></span>';
         setTimeout(() => {

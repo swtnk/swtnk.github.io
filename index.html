@@ -61,6 +61,9 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav flex-row">
+                        <li class="nav-item me-3">
+                            <div class="nav-link d-sm-flex align-items-sm-center" id="google_translate_element"></div>
+                        </li>
                         <li class="nav-item me-3 me-lg-1">
                             <a class="nav-link d-sm-flex align-items-sm-center" target="_blank"
                                 href="./static/media/doc/swetank_subham_resume.pdf" download="swetank_subham_resume">
@@ -79,27 +82,26 @@
     <!--Main layout-->
     <main>
         <section class="d-block fh" id="home">
-            <div class="container fh">
+            <div class="container-fluid fh">
                 <div class="row">
-                    <div class="col-md-6 fh d-flex p-rel align-items-center z-1">
-                        <div class="dom shape-h1 p-abs profile-photo t-5"></div>
-                        <div class="z-1 profile-name">
-                            <h1 class="display-3 text-uppercase"><strong class="text-shadow">Swetank Subham</strong>
-                            </h1>
-                            <span class="d-block intro-underline"></span>
-                            <div class="social-icon-container" class="text-align--center">
-                                <a class="social-icon icon-linkedin" target="_blank" href="https://www.linkedin.com/in/swetank-subham/"><i class="fab fa-linkedin"></i></a>
-                                <a class="social-icon icon-github" target="_blank" href="https://github.com/swtnk"><i class="fab fa-github"></i></a>
-                                <a class="social-icon icon-facebook" target="_blank" href="https://www.facebook.com/shwetankshubham.roy"><i class="fab fa-facebook-square"></i></a>
-                                <a class="social-icon icon-instagram" target="_blank" href="https://www.instagram.com/imswetank/"><i class="fab fa-instagram"></i></a>
+                    <div class="col-md-6 fh d-flex p-rel d-flex align-items-center justify-content-center z-1">
+                        <div class="p-5">
+                            <div class="portfolio-image-container">
+                                <img class="portfolio-image" src="./static/media/images/swetank_1.png" alt="Swetank Subham" onerror='this.onerror = null; this.style.display="none"' loading="lazy">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 fh d-flex align-items-center z-1">
+                    <div class="col-md-6 p-5 fh d-flex align-items-center z-1">
                         <div>
-                            <h5>I am a</h5>
-                            <h4 class="display-4"><strong id="typewriter">Software Developer</strong></h4>
-                            <h5>And, I am good at</h5>
+                            <div class="z-1 profile-name">
+                                <h1 class="display-1 text-uppercase"><strong class="text-shadow">Swetank Subham</strong></h1>
+                                <span class="d-block intro-underline"></span>
+                            </div>
+                            <div class="mt-4 tv typewriter-container">
+                                <h5 class="mt-4">I am a</h5>
+                                <h3 class="mb-3"><strong id="typewriter">Software Developer / Engineer</strong></h4>
+                            </div>
+                            <h5 class="mt-4">And, I am good at</h5>
                             <div class="skills">
                                 <h5 class="skill"><span class="badge bg-dark"><i class="devicon-python-plain"></i> Python</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="devicon-bash-plain"></i> Shell Scripting</span></h5>
@@ -125,6 +127,12 @@
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> JSON</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> Pickle</span></h5>
                                 <h5 class="skill"><span class="badge bg-dark"><i class="devicon-redis-plain"></i> Redis</span></h5>
+                            </div>
+                            <div class="social-icon-container tv" class="text-align--center mt-5">
+                                <a class="social-icon icon-linkedin" target="_blank" href="https://www.linkedin.com/in/swetank-subham/"><i class="fab fa-linkedin"></i></a>
+                                <a class="social-icon icon-github" target="_blank" href="https://github.com/swtnk"><i class="fab fa-github"></i></a>
+                                <a class="social-icon icon-facebook" target="_blank" href="https://www.facebook.com/shwetankshubham.roy"><i class="fab fa-facebook-square"></i></a>
+                                <a class="social-icon icon-instagram" target="_blank" href="https://www.instagram.com/imswetank/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -630,8 +638,12 @@
     <script type="text/javascript" src="./static/vendor/mdb/js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="module" src="./static/app/js/app.js"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript">
-
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
     </script>
 </body>
 
