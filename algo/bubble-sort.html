@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <span class="name-short">VA</span>
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Visual Algo</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <button id="action">
+                            <i class='bx bx-play-circle icon'></i>
+                            <span class="text nav-text">Sort</span>
+                        </button>
+                    </li>
+
+                    <li class="nav-link">
+                        <button id="new-data">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Random Dataset</span>
+                        </button>
+                    </li>
+
+                    <li class="nav-link">
+                        <button id="reset">
+                            <i class='bx bx-reset icon'></i>
+                            <span class="text nav-text">Reset</span>
+                        </button>
+                    </li>
+
+                    <span class="li-group">
+                        <li class="nav-link">
+                            <button id="incr-speed">
+                                <i class='bx bx-plus-circle icon'></i>
+                                <span class="text nav-text">Increase Speed</span>
+                            </button>
+                        </li>
+    
+                        <li class="nav-link">
+                            <button id="reset-speed">
+                                <span class='icon' id="speedometer"></span>
+                                <span class="text nav-text">Speed (Reset)</span>
+                            </button>
+                        </li>
+    
+                        <li class="nav-link">
+                            <button id="decr-speed">
+                                <i class='bx bx-minus-circle icon'></i>
+                                <span class="text nav-text">Decrease Speed</span>
+                            </button>
+                        </li>
+                    </span>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+    <section class="home">
+        <div id="algo-title">
+            <h1 class="text">Bubble Sort</h1>
+        </div>
+        <div id="operation">
+            <div>
+                <textarea id="custom-input"
+                    placeholder="Custom input Ex.: 9, 5, 8, 7 ... upto 500 numerical values"></textarea>
+            </div>
+        </div>
+        <div id="visual-algo"></div>
+        <div id="output">
+            <div class="text-color">
+                <div class="display-flex justify-space-between algo-stat">
+                    <span class="output-container"><strong>Status&nbsp;&nbsp;:</strong> <span id="status">Not Started</span></span>
+                    <span class="output-container"><strong>Iteration&nbsp;:</strong> <span id="iter-count">0</span></span>
+                    <span class="output-container"><strong>Swap&nbsp;:</strong> <span id="swap-count">0</span></span>
+                </div>
+                <div>
+                    <span class="output-container"><strong>Input &nbsp;&nbsp;&nbsp;&nbsp;:</strong></span> <span id="input-data"></span>
+                </div>
+                <div>
+                    <span class="output-container"><strong>Output : </strong></span> <span id="output-data">-</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../js-algo/common.js"></script>
+    <script src="../js-algo/bubble-sort.js"></script>
+</body>
+
+</html>
