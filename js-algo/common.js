@@ -20,6 +20,14 @@ const algo_div = document.querySelector('#visual-algo'),
 
 const timer = ms => new Promise(resolve => setTimeout(resolve, ms));
 
+const resetOutput = () => {
+    iter = 0;
+    swap = 0;
+    algoStatus.innerHTML = `Not Started`;
+    iterCount.innerHTML = 0;
+    swapCount.innerHTML = 0;
+}
+
 const autoTextColor = (r, g, b) => {
     r_inv = r * 0.299;
     g_inv = g * 0.587;

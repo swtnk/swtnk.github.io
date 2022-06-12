@@ -73,6 +73,7 @@ const updateSampleArray = (array) => {
 }
 
 const bubbleSort = async (array) => {
+    resetOutput();
     for (let [index, value] of array.entries()) {
         algoStatus.innerHTML = `Sorting`;
         for (let j = 0; j < array.length - index - 1; j++) {
@@ -126,6 +127,7 @@ if (actionBtn) {
 if (resetBtn) {
     resetBtn.addEventListener('click', () => {
         abort = true;
+        resetOutput();
         sampleArray = structuredClone(tempArray);
         updateSampleArray(sampleArray);
     })
@@ -134,6 +136,7 @@ if (resetBtn) {
 if (newDataBtn) {
     newDataBtn.addEventListener('click', () => {
         abort = true;
+        resetOutput();
         generateSampleArray();
         sampleArray = structuredClone(tempArray);
         updateSampleArray(sampleArray);
@@ -145,6 +148,7 @@ createShape(sampleArray);
 if (customInput) {
     customInput.addEventListener('input', () => {
         data = customInput.value;
+        resetOutput();
         if (data.length) {
             array = data.split(',').map(Number);
             sampleArray = array.slice(0, 31);

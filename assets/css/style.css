@@ -98,6 +98,15 @@ body {
     font-size: 1rem;
 }
 
+.sidebar li a.active {
+    background-color: #ededed;
+}
+
+.sidebar li a.active:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
 .shape {
     position: relative;
     display: flex;
@@ -162,6 +171,119 @@ body {
 
 .display-flex.justify-space-between {
     justify-content: space-between;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#ds-algo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.algo-card {
+    position: relative;
+    min-width: 250px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 3px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.algo-card .top-bar {
+    width: 50%;
+    height: 4px;
+    background: #507bfc;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.algo-card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    width: 100%;
+}
+
+.algo-card  .btn{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.algo-card  .btn a i{
+    margin-right: 9px;
+}
+.algo-card  .btn a{
+    border-radius: 20px;
+    color: #8b8b8b;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+.algo-card  .btn a:hover{
+    color: #fff;
+    box-shadow: 2px 5px 15px rgba(80,123,252,0.05);
+    background-color: #507bfc;
+    transition: all ease 0.5s;
+}
+
+.algo-card .content img{
+    width: 100%;
+    height: 100%;
+    border-radius:4px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
+}
+.algo-card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.algo-card .content strong{
+    font-weight: 500;
+    color: #141414;
+    margin-top: 10px;
+}
+.algo-card .content p{
+    font-size: 0.9rem;
+    color: #7a7a7a;
+    margin: 4px 0px 10px 0px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
 }
 
 span.li-group {
