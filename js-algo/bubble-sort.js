@@ -49,7 +49,7 @@ const createShape = (array) => {
         div.id = `shape-parent-${index}`;
         div.dataset.index = index;
         divInner.classList.add('shape-inner');
-        divInner.innerHTML = value;
+        divInner.innerHTML = `<small>${value}</small>`;
         divInner.id = `shape-${index}`
         divArrow.classList.add('shape-arrow');
         divArrow.id = `shape-arrow-${index}`;
