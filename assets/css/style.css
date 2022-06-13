@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 10vh;
     width: 100%;
     text-align: center;
 }
@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 10vh;
 }
 
 #operation > div {
@@ -47,13 +47,12 @@ body {
     border-radius: 4px;
     resize: none;
     padding: 8px;
-    height: 80px;
 }
 
 #visual-algo {
     position: relative;
     display: flex;
-    height: calc(100% - 450px);
+    height: calc(100vh - 50vh);
     flex-direction: row;
     align-items: end;
     justify-content: center;
@@ -90,7 +89,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 15vh;
     margin-top: 30px;
 }
 

@@ -54,8 +54,8 @@ const createShape = (array) => {
         divArrow.classList.add('shape-arrow');
         divArrow.id = `shape-arrow-${index}`;
         divArrow.innerHTML = '&#8679;';
-        temp = remapRatio(value, min, max, 30, 300);
-        divInner.style.height = `${temp}px`;
+        temp = remapRatio(value, min, max, 2, 45);
+        divInner.style.height = `${temp}vh`;
         r = (temp * 33) % 255;
         g = (temp * 55) % 255;
         b = (temp * 77) % 255;
