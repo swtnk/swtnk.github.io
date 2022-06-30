@@ -6,7 +6,7 @@ let sampleArray = [];
 const generateSampleArray = () => {
     tempArray = [];
     while (tempArray.length < len) {
-        randNum = Math.floor(Math.random() * 500);
+        randNum = Math.floor(Math.random() * 300);
         if (!tempArray.includes(randNum)) {
             tempArray.push(randNum);
         }
