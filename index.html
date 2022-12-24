@@ -16,167 +16,693 @@
     <!-- MDB icon -->
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="./static/vendor/fa/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fa/css/all.min.css" />
     <link rel="stylesheet" href="./static/vendor/devicon-master/devicon.min.css" />
+    <link rel="stylesheet" href="./assets/boxicon/css/boxicons.min.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <!-- MDB CSS-->
-    <link rel="stylesheet" href="./static/vendor/mdb/css/mdb.min.css" />
+    <!-- <link rel="stylesheet" href="./static/vendor/mdb/css/mdb.min.css" /> -->
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./static/app/css/app.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/mode.css">
     <script type="text/javascript" src="./static/vendor/moment/moment-with-locales.min.js"></script>
 </head>
 
 <body>
+    <nav>
+    </nav>
     <!--Main Navigation-->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#top-nav" aria-controls="top-nav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="/">swetanksubham.com</a>
-                <div class="collapse navbar-collapse justify-content-center" id="top-nav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="#home"> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#introduction"> Summary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact"> About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education"> Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#employement"> Employement</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills"> Skills</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav flex-row">
-                        <li class="nav-item me-3">
-                            <div class="nav-link d-sm-flex align-items-sm-center" id="google_translate_element"></div>
-                        </li>
-                        <li class="nav-item me-3 me-lg-1">
-                            <a class="nav-link d-sm-flex align-items-sm-center" target="_blank"
-                                href="./static/media/doc/swetank_subham_resume.pdf" download="swetank_subham_resume">
-                                <i class="fa fa-download"></i>
-                                <strong class="d-none d-sm-block ms-1"> Resume</strong>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        
         <!-- Navbar -->
     </header>
     <!--Main Navigation-->
 
     <!--Main layout-->
     <main>
-        <section class="d-block fh" id="home">
-            <div class="container fh">
-                <div class="row">
-                    <div class="col-md-6 fh d-flex p-rel align-items-center z-1">
-                        <div class="dom shape-h1 p-abs profile-photo t-5"></div>
-                        <div class="z-1 profile-name">
-                            <h1 class="display-3 text-uppercase"><strong class="text-shadow">Swetank Subham</strong>
-                            </h1>
-                            <span class="d-block intro-underline"></span>
-                            <div class="social-icon-container" class="text-align--center">
-                                <a class="social-icon icon-linkedin" target="_blank" href="https://www.linkedin.com/in/swetank-subham/"><i class="fab fa-linkedin"></i></a>
-                                <a class="social-icon icon-github" target="_blank" href="https://github.com/swtnk"><i class="fab fa-github"></i></a>
-                                <a class="social-icon icon-facebook" target="_blank" href="https://www.facebook.com/shwetankshubham.roy"><i class="fab fa-facebook-square"></i></a>
-                                <a class="social-icon icon-instagram" target="_blank" href="https://www.instagram.com/imswetank/"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
+        <div class="switch_box mode-switch">
+			<input id="toogleTheme" type="checkbox" class="switch">
+		</div>
+        <div class="resume-holder resume-absolute font--montserrat">
+			<a href="/static/docs/swetank-resume-v3.pdf" download="swetank_subham_resume">
+                <i class="icon fw fa fa-download"></i>
+                <strong>Resume</strong>
+            </a>
+		</div>
+        <section class="hero">
+            <div class="reveal">
+                <div class="hero-text">
+                    <h2 class="greet">Hi, I am</h2>
+                    <h1 class="name">Swetank Subham</h1>
+                    <h3 class="quick-intro">I do software backend and love to do web frontend</h3>
+                </div>
+            </div>
+            <!-- <div class="background">
+                <img src="/static/img/swetank.transparent.png" alt="" srcset="">
+            </div> -->
+        </section>
+        <section class="connect">
+            <div class="social github">
+                <a href="https://github.com/swtnk" target="_blank" rel="noopener noreferrer" data-tooltip="GitHub" data-tooltip-location="right"><i class='icon bx bxl-github' ></i> </a>
+            </div>
+            <div class="social linkedin">
+                <a href="https://www.linkedin.com/in/swetank-subham/" target="_blank" rel="noopener noreferrer" data-tooltip="LinkedIn" data-tooltip-location="right"><i class='icon bx bxl-linkedin' ></i> </a>
+            </div>
+            <div class="social instagram">
+                <a href="https://www.instagram.com/imswetank/" target="_blank" rel="noopener noreferrer" data-tooltip="Instagram" data-tooltip-location="right"><i class='icon bx bxl-instagram'></i> </a>
+            </div>
+            <div class="social facebook">
+                <a href="https://www.facebook.com/shwetankshubham.roy" target="_blank" rel="noopener noreferrer" data-tooltip="Facebook" data-tooltip-location="right"><i class='icon bx bxl-facebook'></i> </a>
+            </div>
+        </section>
+        <section class="section about" data-title="About">
+            <div class="w-100-p reveal">
+                <h2 class="title">About</h2>
+                <p class="quick-intro font--montserrat">
+                    I believe, I am a good learner and describe myself as a lifelong learner and
+                    implementer.
+                    I am very keen to use my technical and managing skills as well as learning
+                    for the betterment
+                    of software industry by keeping mutual growth in mind. I have around
+                    <strong class="color-blue">10 months</strong> (internship)
+                    <strong class="color-blue">+
+                        <script>
+                            months = moment(new Date()).diff(moment("2019-07-01", "YYYY-MM-DD"), 'months');
+                            document.write(Math.floor(months / 12) + ' year(s) ');
+                            if (months % 12 > 0) {
+                                document.write(' and ' + (months % 12) + ' month(s)');
+                            }
+                        </script>
+                    </strong>
+                    of corporate experience in software development and scripting which includes
+                    various web
+                    development projects in different technologies and frameworks like <span class="color-blue">Django
+                    (Python)</span>,
+                    <span class="color-blue">Laravel (PHP)</span>, <span class="color-blue">Yii (PHP)</span> and other frameworks like <span class="color-blue">RASA (AI chatbot)</span>.
+                </p>
+                <div class="about-info font--montserrat">
+                    <div>
+                        <strong>Date of Birth</strong>
+                        <p>11 August 1996</p>
                     </div>
-                    <div class="col-md-6 fh d-flex align-items-center z-1">
-                        <div>
-                            <h5>I am a</h5>
-                            <h4 class="display-4"><strong id="typewriter">Software Developer</strong></h4>
-                            <h5>And, I am good at</h5>
-                            <div class="skills">
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-python-plain"></i> Python</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-bash-plain"></i> Shell Scripting</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-javascript-plain"></i> JavaScript</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-git-plain"></i> Git</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-jira-plain"></i> Jira</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-linux-plain"></i> Linux</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-docker-plain"></i> Docker</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-html5-plain"></i> HTML</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-css3-plain"></i> CSS</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-php-plain"></i> PHP</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-pandas-plain"></i> Pandas</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fas fa-project-diagram fa-fw"></i> Data Structures</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fas fa-sitemap fa-fw"></i> OOP</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> Tesseract</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> Agile Methodology</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-mysql-plain"></i> MySQL</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> OpenCV</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> PySpark</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> RASA</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> Sanic</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> Apache Spark</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> JSON</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> Pickle</span></h5>
-                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-redis-plain"></i> Redis</span></h5>
-                            </div>
+                    <div>
+                        <strong>Age</strong>
+                        <p><script>
+                            months = moment(new Date()).diff(moment("1996-08-11", "YYYY-MM-DD"), 'months');
+                            document.write(Math.floor(months / 12) + ' year(s) ');
+                            if (months % 12 > 0) {
+                                document.write(' and ' + (months % 12) + ' month(s)');
+                            }
+                        </script></p>
+                    </div>
+                    <div>
+                        <strong>Degree</strong>
+                        <p>Bachelor of Technology</p>
+                    </div>
+                    <div>
+                        <strong>Phone</strong>
+                        <p><a href="tel:+919110090019">+91 9110 09 0019</a></p>
+                    </div>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:swetanksubham.r@gmail.com" rel="noopener noreferrer">swetanksubham.r@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <strong>Website</strong>
+                        <p><a href="https://swetanksubham.com" rel="noopener noreferrer">https://swetanksubham.com</a></p>
+                    </div>
+                    <div>
+                        <strong>City</strong>
+                        <p><a href="https://muzaffarpur.nic.in/" rel="noopener noreferrer">Muzaffarpur</a></p>
+                    </div>
+                    <div>
+                        <strong>Job Status / Availability</strong>
+                        <p>Employed / Open to better opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section career" data-title="Career">
+            <div class="w-100-p reveal">
+                <h2 class="title">Career</h2>
+                <p class="sub-title font--montserrat">
+                    Professional Experience
+                </p>
+                <div class="info-tabs font--montserrat">
+                    <div class="navigation">
+                        <button class="nav-tab active" data-target='career_5'>
+                            <strong>R Systems</strong>
+                        </button>
+                        <button class="nav-tab" data-target='career_4'>
+                            <strong>RenewBuy</strong>
+                        </button>
+                        <button class="nav-tab" data-target='career_3'>
+                            <strong>Knowlarity</strong>
+                        </button>
+                        <button class="nav-tab" data-target='career_2'>
+                            <strong>GS Lab</strong>
+                        </button>
+                        <button class="nav-tab" data-target='career_1'>
+                            <strong>GS Lab (Intern)</strong>
+                        </button>
+                    </div>
+                    <div class="details">
+                        <div class="tab-content" id="career_5">
+                            <h3 class="tab-title"><strong>R Systems</strong></h3>
+                            <h4 class="tab-sub-title">Senior Software Engineer</h4>
+                            <small>Noida</small>
+                            <p>25 August 2022 - Present</p>
+                            <hr class="divider">
+                            <strong>Roles and Responsibility:</strong>
+                            <ul>
+                                <li>Backend Developer, responsible for delivering high quality product on time.</li>
+                                <li>Daily Standup.</li>
+                                <li>Trouble shooting production issues.</li>
+                                <li>Feature enhancement and possible optimizations.</li>
+                                <li>Code review.</li>
+                                <li>Assistance during different production activities.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content hidden" id="career_4">
+                            <h3 class="tab-title"><strong>RenewBuy</strong></h3>
+                            <h4 class="tab-sub-title">Senior Software Engineer</h4>
+                            <small>Gurugram</small>
+                            <p>30 May 2022 - 01 August 2022</p>
+                            <hr class="divider">
+                            <strong>Roles and Responsibility:</strong>
+                            <ul>
+                                <li>Backend Developer, responsible for delivering high quality product on time.</li>
+                                <li>Due date estimation of tasks.</li>
+                                <li>Daily Standup.</li>
+                                <li>Trouble shooting production issues.</li>
+                                <li>Feature enhancement and possible optimizations.</li>
+                                <li>Code review.</li>
+                                <li>Assistance during different production activities.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content hidden" id="career_3">
+                            <h3 class="tab-title"><strong>Knowlarity Communications PVT LTD</strong></h3>
+                            <h4 class="tab-sub-title">Software Developer</h4>
+                            <small>Gurugram</small>
+                            <p>30 September 2021 - 29 May 2022</p>
+                            <hr class="divider">
+                            <strong>Roles and Responsibility:</strong>
+                            <ul>
+                                <li>Backend Developer, responsible for delivering high quality product on time.</li>
+                                <li>Due date estimation of tasks.</li>
+                                <li>Daily Standup.</li>
+                                <li>Trouble shooting production issues.</li>
+                                <li>Feature enhancement and possible optimizations.</li>
+                                <li>Code review.</li>
+                                <li>Assistance during different production activities.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content hidden" id="career_2">
+                            <h3 class="tab-title"><strong>Great Software Laboratory PVT LTD</strong></h3>
+                            <h4 class="tab-sub-title">Software Engineer</h4>
+                            <small>Pune</small>
+                            <p>02 July 2019 - 29 September 2021</p>
+                            <hr class="divider">
+                            <strong>Roles and Responsibility:</strong>
+                            <ul>
+                                <li>Backend Developer, responsible for delivering high quality product on time.</li>
+                                <li>Due date estimation of tasks.</li>
+                                <li>Daily Standup.</li>
+                                <li>Trouble shooting production issues.</li>
+                                <li>Feature enhancement and possible optimizations.</li>
+                                <li>Code review.</li>
+                                <li>Assistance during different production activities.</li>
+                                <li>Providing python training to the team and interns</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content hidden" id="career_1">
+                            <h3 class="tab-title"><strong>Great Software Laboratory PVT LTD</strong></h3>
+                            <h4 class="tab-sub-title">Software Engineer (Intern)</h4>
+                            <small>Pune</small>
+                            <p>02 August 2018 - 30 June 2019</p>
+                            <hr class="divider">
+                            <strong>Roles and Responsibility:</strong>
+                            <ul>
+                                <li>Backend Developer, responsible for delivering high quality product on time.</li>
+                                <li>Daily Standup.</li>
+                                <li>Trouble shooting issues and exploring new technology</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="d-block" id="introduction">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 fh d-flex align-items-center">
-                        <div>
-                            <div class="">
-                                <div class="card-body">
-                                    <h2 class="text-decoration-underline text-center mb-4"><strong>Summary</strong></h2>
-                                    <p class="lead intro-para">
-                                        <strong>
-                                            I believe, I am a good learner and describe myself as a lifelong learner and
-                                            implementer.
-                                            I am very keen to use my technical and managing skills as well as learning
-                                            for the betterment
-                                            of software industry by keeping mutual growth in mind. I have around
-                                            <strong>10 months</strong> (internship)
-                                            <strong>+
-                                                <script>
-                                                    months = moment(new Date()).diff(moment("2019-07-01", "YYYY-MM-DD"), 'months');
-                                                    document.write(Math.floor(months / 12) + ' year(s) ');
-                                                    if (months % 12 > 0) {
-                                                        document.write(' and ' + (months % 12) + ' month(s)');
-                                                    }
-                                                </script>
-                                            </strong>
-                                            of corporate experience in software development and scripting which includes
-                                            various web
-                                            development projects in different technologies and frameworks like Django
-                                            (Python),
-                                            Laravel (PHP), Yii (PHP) and other frameworks like RASA (AI chatbot).
-                                        </strong>
-                                    </p>
-                                    <div class="text-center mt-2">
-                                        <div class="mantra">
-                                            <span><em>My Mantra</em></span>
+        <section class="section certification" data-title="Certification">
+            <div class="w-100-p reveal">
+                <h2 class="title">Certification</h2>
+                <p class="sub-title font--montserrat">
+                    Certifications and MOOCs
+                </p>
+                <div class="info-tabs font--montserrat">
+                    <div class="navigation">
+                        <button class="nav-tab active" data-target='cert_1'>
+                            <strong>Nanodegree</strong>
+                            <p>2018</p>
+                        </button>
+                        <button class="nav-tab" data-target='cert_2'>
+                            <strong>The Complete Web Development Course</strong>
+                            <p>2018</p>
+                        </button>
+                    </div>
+                    <div class="details">
+                        <div class="tab-content" id="cert_1">
+                            <!-- <h3 class="tab-title"><strong>Data Structures and Algorithms</strong></h3>
+                            <h4 class="tab-sub-title">Nano Degree, Udacity</small>
+                            <small>Massive Open Online Courses</small>
+                            <p>Link: <a href="https://graduation.udacity.com/confirm/CANUTXDS" target="_blank" rel="noopener noreferrer" data-tooltip="CANUTXDS" data-tooltip-location="right">https://graduation.udacity.com/confirm/CANUTXDS</a></p>
+                            <p>ID: <strong>CANUTXDS</strong></p> -->
+                            <h3 class="tab-title"><strong>Data Structures and Algorithms</strong></h3>
+                            <h4 class="tab-sub-title">Nano Degree, Udacity</h4>
+                            <small>Massive Open Online Courses</small>
+                            <p>Link: <a href="https://graduation.udacity.com/confirm/CANUTXDS" target="_blank" rel="noopener noreferrer" data-tooltip="CANUTXDS" data-tooltip-location="right">https://graduation.udacity.com/confirm/CANUTXDS</a></p>
+                            <p>ID: <strong>CANUTXDS</strong></p>
+                        </div>
+                        <div class="tab-content hidden" id="cert_2">
+                            <h3 class="tab-title"><strong>The Complete Web Development Course - Build 15 Projects</strong></h3>
+                            <h4 class="tab-sub-title">Udemy</small>
+                            <small>Massive Open Online Courses</small>
+                            <p>Link: <a href="https://www.udemy.com/certificate/UC-30HPQA6I/" target="_blank" rel="noopener noreferrer" data-tooltip="UC-30HPQA6I" data-tooltip-location="right">https://www.udemy.com/certificate/UC-30HPQA6I/</a></p>
+                            <p>ID: <strong>UC-30HPQA6I</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section skills" data-title="Skills">
+            <div class="w-100-p reveal">
+                <h2 class="title">Skills</h2>
+                <p class="sub-title font--montserrat">
+                    Proficiency and Expertise
+                </p>
+                <div class="info-tabs font--montserrat">
+                    <div class="navigation">
+                        <button class="nav-tab active" data-target='skill_1'>
+                            <strong>Programming Language</strong>
+                        </button>
+                        <button class="nav-tab" data-target='skill_2'>
+                            <strong>Markup / Stylesheet Language</strong>
+                        </button>
+                        <button class="nav-tab" data-target='skill_3'>
+                            <strong>Framework / Library</strong>
+                        </button>
+                        <button class="nav-tab" data-target='skill_4'>
+                            <strong>Database</strong>
+                        </button>
+                        <button class="nav-tab" data-target='skill_5'>
+                            <strong>Operating System</strong>
+                        </button>
+                        <button class="nav-tab" data-target='skill_6'>
+                            <strong>Tools</strong>
+                        </button>
+                    </div>
+                    <div class="details">
+                        <div class="tab-content" id="skill_1">
+                            <div class="pills-container">
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-python-plain colored"></i>
+                                        Python
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
                                         </div>
-                                        <figure>
-                                            <blockquote class="my-mantra">
-                                                <p>
-                                                    First take away from any event should be learning.
-                                                </p>
-                                            </blockquote>
-                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-javascript-plain colored"></i>
+                                        JavaScript
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-go-plain colored"></i>
+                                        Go Lang
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                          <a class="star"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content hidden" id="skill_2">
+                            <div class="pills-container">
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-html5-plain colored"></i>
+                                        HTML
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-css3-plain colored"></i>
+                                        CSS
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-markdown-original colored"></i>
+                                        Markdown
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content hidden" id="skill_3">
+                            <div class="pills-container">
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-django-plain colored"></i>
+                                        Django
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <img class="alt-font-icon" src="/static/img/sanic.png" alt="">
+                                        Sanic
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <img class="alt-font-icon" src="/static/img/rasa.png" alt="">
+                                        Rasa
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-pandas-original colored"></i>
+                                        Pandas
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-numpy-original colored"></i>
+                                        NumPy
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                          <a class="star rated"></a>
+                                          <a class="star rated"></a>
+                                          <a class="star"></a>
+                                          <a class="star"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content hidden" id="skill_4">
+                            <div class="pills-container">
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-mysql-plain colored"></i>
+                                        MySQL
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-postgresql-plain colored"></i>
+                                        PostgreSQL
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-mongodb-plain colored"></i>
+                                        MongoDB
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                            <a class="star"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content hidden" id="skill_5">
+                            <div class="pills-container">
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-windows8-original colored"></i>
+                                        Windows
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-apple-original colored"></i>
+                                        MacOS
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-linux-plain colored"></i>
+                                        Linux
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content hidden" id="skill_6">
+                            <div class="pills-container">
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-vscode-plain colored"></i>
+                                        VS Code
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-pycharm-plain colored"></i>
+                                        Pycharm
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-git-plain colored"></i>
+                                        Git
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-github-original colored"></i>
+                                        GitHub
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-gitlab-original colored"></i>
+                                        GitLab
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-bitbucket-original colored"></i>
+                                        Bitbucket
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pill">
+                                    <span>
+                                        <i class="devicon-jira-plain colored"></i>
+                                        Jira
+                                    </span>
+                                    <div class="rating left">
+                                        <div class="stars">
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star rated"></a>
+                                            <a class="star"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -185,469 +711,24 @@
                 </div>
             </div>
         </section>
-        <section class="d-block" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 fh d-flex align-items-center">
-                        <div class="fw-p">
-                            <div class="">
-                                <div class="card-body" style="border-radius: 0.5rem;">
-                                    <h2 class="text-decoration-underline text-center"><strong>About</strong></h2>
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <img class="png-shadow about-photo"
-                                                src="./static/media/images/swetank.png" alt="Swetank Subham">
-                                        </div>
-                                        <div class="col-md-8 ps-5">
-                                            <h2 class="mt-5">Software Developer / Engineer</h2>
-                                            <div class="d-grid about-data mt-5">
-                                                <div class="about-data-cell"><span
-                                                        class="about-data-header"><strong>Date of Birth</strong></span>
-                                                    11 August 1996</div>
-                                                <div class="about-data-cell"><span class="about-data-header"><strong>Age</strong></span> 
-                                                            <script>
-                                                                months = moment(new Date()).diff(moment("1996-08-11", "YYYY-MM-DD"), 'months');
-                                                                document.write(Math.floor(months / 12) + ' year(s) ');
-                                                                if (months % 12 > 0) {
-                                                                    document.write(' and ' + (months % 12) + ' month(s)');
-                                                                }
-                                                            </script>
-                                                        </div>
-                                                <div class="about-data-cell"><span
-                                                        class="about-data-header"><strong>Website</strong></span> <a
-                                                        href="/">https://swetanksubham.com</a></div>
-                                                <div class="about-data-cell"><span
-                                                        class="about-data-header"><strong>Degree</strong></span>
-                                                    Bachelor's of Technology</div>
-                                                <div class="about-data-cell"><span
-                                                        class="about-data-header"><strong>Phone</strong></span> <a
-                                                        href="tel:+919110090019">+91 (911) 009-0019</a></div>
-                                                <div class="about-data-cell"><span
-                                                        class="about-data-header"><strong>Email</strong></span> <a
-                                                        href="mailto:swetanksubham.r@gmail.com">swetanksubham.r@gmail.com</a>
-                                                </div>
-                                                <div class="about-data-cell"><span
-                                                        class="about-data-header"><strong>City</strong></span> <a
-                                                        href="https://muzaffarpur.nic.in/" target="_blank"
-                                                        rel="noopener noreferrer"> Muzaffarpur</a></div>
-                                                <div class="about-data-cell"><span class="about-data-header"><strong>Job
-                                                            Status / Availability</strong></span> Employed / Open to
-                                                    better opportunities</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section resume" data-title="Resume">
+            <div class="w-100-p reveal">
+                <h2 class="title">Resume</h2>
+                <p class="sub-title font--montserrat">
+                    Preview
+                </p>
+                <div class="center">
+                    <canvas id="resume-viewer"></canvas>
                 </div>
             </div>
         </section>
-        <section class="d-block mt-5" id="education">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 fh d-flex align-items-center">
-                        <div class="fw-p">
-                            <div class="timeline mt-5">
-                                <h2>Education</h2>
-
-                                <div class="line">
-                                    <div class="line-content">
-
-                                        <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-year">
-                                                                <small>2015-2019</small></p>
-                                                            <h4 class="pt-0 px-0 education-degree">Bachelor's Degree
-                                                            </h4>
-                                                        </div>
-                                                        <div class="table-col px-5">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <strong>Bachelor of Technology | Computer Science and
-                                                                    Engineering</strong></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a
-                                                                    target="_blank" class="link text-blue"
-                                                                    href="https://lpu.in"><small>Lovely Professional
-                                                                        University, Punjab</small></a></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Graduated
-                                                                in Computer Science and Technology with Android
-                                                                Development as minor.</p>
-                                                            <p class="pb-0 pt-0 px-0 education-grade">CGPA: <span
-                                                                    class="grade-value">8.05</span>/10</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="content">
-                                            <div class="card mt-3">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-year">
-                                                                <small>2018</small></p>
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Nanodegree</h4>
-                                                            <p class="pb-0 pt-0 px-0"><small>(MOOCs)</small></p>
-                                                        </div>
-                                                        <div class="table-col px-5">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <strong>Data Structures and Algorithms</strong></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a
-                                                                    target="_blank" class="link text-blue"
-                                                                    href="https://udacity.com"><small>Udacity</small></a>
-                                                            </p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 lead education-text">I have
-                                                                learned fundamentals of Python data structures and
-                                                                algorithms.</p>
-                                                            <p class="pb-0 pt-0 px-0 education-grade">Completed</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="content">
-                                            <div class="card mt-3">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-year">
-                                                                <small>2014</small></p>
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">High School</h4>
-                                                            <p class="pb-0 pt-0 px-0"><small>(Intermediate | HSC |
-                                                                    XII)</small></p>
-                                                        </div>
-                                                        <div class="table-col px-5">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <strong>Physics, Chemistry, Mathematics, English,
-                                                                    Physical Education</strong></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a
-                                                                    target="_blank" class="link text-blue"
-                                                                    href="https://www.chandrasheel.co.in"><small>Chandrasheel
-                                                                        Vidyapeeth, Kanti</small></a></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 lead education-text">I have
-                                                                completed higher secondary certification with Physics,
-                                                                Chemistry, Mathematics, Physical Education and English.
-                                                            </p>
-                                                            <p class="pb-0 pt-0 px-0 education-grade">Percentage: <span
-                                                                    class="grade-value">71</span>%</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card mt-3">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-year">
-                                                                <small>2012</small></p>
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">High School</h4>
-                                                            <p class="pb-0 pt-0 px-0"><small>(Matriculation | SSC |
-                                                                    X)</small></p>
-                                                        </div>
-                                                        <div class="table-col px-5">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <strong>Primary Education</strong></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a
-                                                                    target="_blank" class="link text-blue"
-                                                                    href="http://davpsmuzaffarpur.com"><small>DAV Public
-                                                                        School, Bakhri, Muzaffarpur</small></a></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 lead education-text">I have
-                                                                learned basics of Science (Physics, Chemistry, Biology),
-                                                                Social Studies (Geography, Civics, History), Languages
-                                                                (English, Hindi, Sanskrit).</p>
-                                                            <p class="pb-0 pt-0 px-0 education-grade">CGPA: <span
-                                                                    class="grade-value">10</span>/10</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="section end" data-title="Hire Me">
+            <div class="w-100-p reveal">
+                <h2 class="title-2">Open to better opportunities</h2>
+                <h3 class="title-4">Thanks & Regards</h3>
+                <h3 class="title-2">Swetank Subham</h3>
             </div>
         </section>
-        <section class="d-block mt-5" id="employement">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 fh d-flex align-items-center">
-                        <div class="fw-p">
-                            <div class="timeline mt-5">
-                                <h2>Employment</h2>
-
-                                <div class="line">
-                                    <div class="line-content">
-                                        <!-- <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>May
-                                                                    2022 - Present</small></p>
-                                                            <h4 class="pt-0 px-0 education-degree">Senior Software Engineer
-                                                            </h4>
-                                                        </div>
-                                                        <div class="table-col px-5">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <strong>RenewBuy</strong></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <small>Gurugram, Haryana, India</small></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a
-                                                                    target="_blank" class="link text-blue"
-                                                                    href="https://www.renewbuy.com/"><small>https://www.renewbuy.com/</small></a>
-                                                            </p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Working
-                                                                as Senior Software Engineer. Role includes developing backend
-                                                                applications.</p>
-                                                            <p class="pb-0 pt-0 px-0 education-grade"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                        <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>Sep
-                                                                    2021 - May 2022</small></p>
-                                                            <h4 class="pt-0 px-0 education-degree">Software Developer
-                                                            </h4>
-                                                        </div>
-                                                        <div class="table-col px-5">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <strong>Knowlarity Communications</strong></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <small>Gurugram, Haryana, India</small></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a
-                                                                    target="_blank" class="link text-blue"
-                                                                    href="https://www.knowlarity.com/"><small>https://www.knowlarity.com/</small></a>
-                                                            </p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Working
-                                                                as Software Developer. Role includes developing backend
-                                                                applications.</p>
-                                                            <p class="pb-0 pt-0 px-0 education-grade"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card mt-3">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>Jul
-                                                                    2019 - Sep 2021</small></p>
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Software
-                                                                Engineer</h4>
-                                                        </div>
-                                                        <div class="table-col px-5">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <strong>Great Software Laboratory</strong></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <small>Baner, Pune, Maharashtra, India</small></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a
-                                                                    target="_blank" class="link text-blue"
-                                                                    href="https://gslab.com/"><small>https://gslab.com/</small></a>
-                                                            </p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Worked as
-                                                                full-stack web developer. Role includes application
-                                                                development, management, and deployment to the
-                                                                production servers.</p>
-                                                            <p class="pb-0 pt-0 px-0 education-grade"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card mt-3">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-year"><small>Aug
-                                                                    2018 - June 2019</small></p>
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Software
-                                                                Engineer</h4>
-                                                            <p class="pb-0 pt-0 px-0"><small>(Intern)</small></p>
-                                                        </div>
-                                                        <div class="table-col px-5">
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <strong>Great Software Laboratory</strong></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-degree-heading">
-                                                                <small>Baner, Pune, Maharashtra, India</small></p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 education-institute"><a
-                                                                    target="_blank" class="link text-blue"
-                                                                    href="https://gslab.com/"><small>https://gslab.com/</small></a>
-                                                            </p>
-                                                            <p class="pb-0 pt-0 px-0 mb-0 lead education-text">Worked as
-                                                                Software Engineer Intern. Role includes developing web
-                                                                applications.</p>
-                                                            <p class="pb-0 pt-0 px-0 education-grade"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="d-block" id="skills">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 fh d-flex align-items-center">
-                        <div class="fw-p">
-                            <div class="timeline mt-5">
-                                <h2>Skills</h2>
-                                <div class="line">
-                                    <div class="line-content">
-                                        <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Programming Language(s)</h4>
-                                                        </div>
-                                                        <div class="table-col px-5 pt-2">
-                                                            <div class="skills pb-2">
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-python-plain"></i> Python</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-javascript-plain"></i> JavaScript</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-php-plain"></i> PHP</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-go-original-wordmark"></i> Go Lang</span></h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Programming Framework(s)</h4>
-                                                        </div>
-                                                        <div class="table-col px-5 pt-2">
-                                                            <div class="skills pb-2">
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-django-plain"></i> Django</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> Sanic</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="fab"></i> RASA</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-laravel-plain"></i> Laravel</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-yii-plain"></i> Yii2</span></h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Database(s)</h4>
-                                                        </div>
-                                                        <div class="table-col px-5 pt-2">
-                                                            <div class="skills pb-2">
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-mysql-plain"></i> MySQL</span></h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Operating System(s)</h4>
-                                                        </div>
-                                                        <div class="table-col px-5 pt-2">
-                                                            <div class="skills pb-2">
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-linux-plain"></i> Linux</span></h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Markup Language(s)</h4>
-                                                        </div>
-                                                        <div class="table-col px-5 pt-2">
-                                                            <div class="skills pb-2">
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-html5-plain"></i> HTML</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-markdown-original"></i> Markdown</span></h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card">
-                                                <div class="card-body p-0">
-                                                    <div class="table-row">
-                                                        <div class="table-col px-5 py-2">
-                                                            <h4 class="pb-0 pt-0 px-0 education-degree">Styling Language(s) / Pre-processor(s)</h4>
-                                                        </div>
-                                                        <div class="table-col px-5 pt-2">
-                                                            <div class="skills pb-2">
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-css3-plain"></i> CSS</span></h5>
-                                                                <h5 class="skill"><span class="badge bg-dark"><i class="devicon-sass-plain"></i> SCSS</span></h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="d-block fh">
-            <div class="container fh">
-                <div class="row">
-                    <div class="col-sm-12 fh d-flex justify-content-center align-items-center">
-                        <div class="text-center">
-                            <h3 class="display-5 text-uppercase"><strong>Open to better opportunities</strong></h3>
-                            <h4 class="mt-4">Thanks & Regards</h4>
-                            <h3 class="display-6 text-uppercase"><strong>Swetank Subham</strong></h3>
-                            <!-- <span class="d-block intro-underline"></span> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
     <!--Main layout-->
 
@@ -656,12 +737,23 @@
 
     </footer>
     <!--Footer-->
+    <div class="cursor">
+        <div class="cursor--small"></div>
+        <div class="cursor--large"></div>
+        <div class="cursor--text">
+            <div class="text">GO HERE! GO HERE! GO HERE! GO HERE!</div>
+        </div>
+    </div>
 
     <!-- MDB JavaScript -->
     <script type="text/javascript" src="./static/vendor/mdb/js/mdb.min.js"></script>
     <!-- Custom scripts -->
-    <script type="module" src="./static/app/js/app.js"></script>
+    <!-- <script type="module" src="./static/app/js/app.js"></script> -->
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+    <script src="./assets/js/pdf.js"></script>
+    <script src="./assets/js/app.js"></script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
