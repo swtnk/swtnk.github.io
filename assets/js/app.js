@@ -259,6 +259,14 @@ window.addEventListener('scroll', (e) => {
     }, 100);
 }, false)
 
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({ matches }) => {
+    if (matches) {
+        body.dataset.theme = 'dark';
+    } else {
+        body.dataset.theme = 'light';
+    }
+});
+
 const url = '/assets/docs/swetank-resume-v3.pdf';
 
   //
