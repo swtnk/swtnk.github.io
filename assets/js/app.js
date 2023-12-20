@@ -3,6 +3,8 @@ const toogleThemeButton = document.querySelector('#toogleTheme');
 const heroTextConatiner = body.querySelector('.hero .reveal');
 const navTabs = body.querySelectorAll('.nav-tab');
 const customCursor = body.querySelector('.cursor');
+const DARK_THEME = 'dark';
+const LIGHT_THEME = 'light';
 
 // CURSOR START
 console.clear();
@@ -195,17 +197,38 @@ window.onload = () => {
     heroTextConatiner.classList.add("active");
 }
 
+const windowColorScheme = window.matchMedia(`(prefers-color-scheme: ${DARK_THEME})`);
+
+const isWindowColorSchemeDark = windowColorScheme.matches;
+
+const setTheme = (theme) => {body.dataset.theme = theme};
+
+const applyWindowColorSchemeToTheme = () => {
+    if (isWindowColorSchemeDark) {
+        setTheme(DARK_THEME);
+    } else {
+        setTheme(LIGHT_THEME);
+    }
+}
+
 if (typeof Storage !== "undefined") {
     let selectedTheme = window.localStorage.getItem('theme');
     if (selectedTheme) {
-        body.dataset.theme = selectedTheme;
-        if (selectedTheme === 'dark') {
+        setTheme(selectedTheme);
+        if (selectedTheme === DARK_THEME) {
             toogleThemeButton.checked = true;
         }
+    } else {
+        applyWindowColorSchemeToTheme();
     }
 } else {
-    console.log('Your browser does not support theme memorisation.')
+    console.log('Your browser does not support theme memorisation. Applying system default.');
+    applyWindowColorSchemeToTheme();
 }
+
+windowColorScheme.addEventListener('change', ({ matches }) => {
+    matches ? setTheme(DARK_THEME) : setTheme(LIGHT_THEME);
+});
 
 if (toogleThemeButton) {
     toogleThemeButton.addEventListener('click', (element) => {
@@ -257,15 +280,7 @@ window.addEventListener('scroll', (e) => {
     timex = setTimeout(function() {
         customCursor.classList.remove('hidden')
     }, 100);
-}, false)
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({ matches }) => {
-    if (matches) {
-        body.dataset.theme = 'dark';
-    } else {
-        body.dataset.theme = 'light';
-    }
-});
+}, false);
 
 const url = '/assets/docs/swetank-resume-v3.pdf';
 
