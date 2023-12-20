@@ -207,8 +207,10 @@ const setTheme = (theme) => {body.dataset.theme = theme};
 const applyWindowColorSchemeToTheme = () => {
     if (isWindowColorSchemeDark) {
         setTheme(DARK_THEME);
+        toogleThemeButton.checked = true;
     } else {
         setTheme(LIGHT_THEME);
+        toogleThemeButton.checked = false;
     }
 }
 
@@ -235,7 +237,13 @@ if (typeof Storage !== "undefined") {
 }
 
 windowColorScheme.addEventListener('change', ({ matches }) => {
-    matches ? setTheme(DARK_THEME) : setTheme(LIGHT_THEME);
+    if (matches) {
+        setTheme(DARK_THEME);
+        toogleThemeButton.checked = true;
+    } else {
+        setTheme(LIGHT_THEME
+        toogleThemeButton.checked = false;
+    }
 });
 
 if (toogleThemeButton) {
