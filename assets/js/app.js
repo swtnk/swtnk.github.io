@@ -233,11 +233,11 @@ windowColorScheme.addEventListener('change', ({ matches }) => {
 if (toogleThemeButton) {
     toogleThemeButton.addEventListener('click', (element) => {
         if (element.target.checked) {
-            body.dataset.theme = 'dark';
-            window.localStorage.setItem('theme', 'dark');
+            setTheme(DARK_THEME);
+            window.localStorage.setItem('theme', DARK_THEME);
         } else {
-            body.dataset.theme = 'light';
-            window.localStorage.setItem('theme', 'light')
+            setTheme(LIGHT_THEME);
+            window.localStorage.setItem('theme', LIGHT_THEME);
         }
     })
 }
