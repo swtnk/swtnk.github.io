@@ -3,6 +3,7 @@ const toogleThemeButton = document.querySelector('#toogleTheme');
 const heroTextConatiner = body.querySelector('.hero .reveal');
 const navTabs = body.querySelectorAll('.nav-tab');
 const customCursor = body.querySelector('.cursor');
+const systemThemeSwitch = body.querySelector('#setSystemTheme');
 const DARK_THEME = 'dark';
 const LIGHT_THEME = 'light';
 
@@ -209,6 +210,13 @@ const applyWindowColorSchemeToTheme = () => {
     } else {
         setTheme(LIGHT_THEME);
     }
+}
+
+if (systemThemeSwitch) {
+    systemThemeSwitch.addEventListener('click', (element) => {
+        window.localStorage.removeItem('theme');
+        applyWindowColorSchemeToTheme();
+    });
 }
 
 if (typeof Storage !== "undefined") {
