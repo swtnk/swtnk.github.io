@@ -241,7 +241,7 @@ windowColorScheme.addEventListener('change', ({ matches }) => {
         setTheme(DARK_THEME);
         toogleThemeButton.checked = true;
     } else {
-        setTheme(LIGHT_THEME
+        setTheme(LIGHT_THEME);
         toogleThemeButton.checked = false;
     }
 });
