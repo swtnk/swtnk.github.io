@@ -1,0 +1,113 @@
+{
+    "name": "Swetank Subham",
+    "title": "Senior Software Engineer",
+    "contact": {
+        "phone": "+919110090019",
+        "email": [
+            "connect@swetanksubham.com",
+            "connect.swetanksubham@gmail.com"
+        ],
+        "linkedin": "/in/swetank-subham/",
+        "website": "https://swetanksubham.com",
+        "address": "Muzaffarpur, Bihar"
+    },
+    "summary": "Results-driven Senior Software Engineer with 5+ years of experience in backend development, API engineering, and system optimization. Adept at driving innovation and delivering high-impact solutions. Passionate about continuous learning and pushing the boundaries of technology.",
+    "skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "MySQL",
+        "Docker",
+        "Linux",
+        "Django",
+        "Spring Boot",
+        "Sanic",
+        "jOOQ",
+        "HTML",
+        "CSS",
+        "PHP",
+        "Git",
+        "Jira",
+        "LLM",
+        "OCR",
+        "Ollama",
+        "RASA",
+        "Bash"
+    ],
+    "work_experience": [
+        {
+            "company": "R Systems",
+            "location": "Noida, Uttar Pradesh, India",
+            "position": "Senior Software Engineer",
+            "duration": "25th August 2022 – Present",
+            "responsibilities": [
+                "Orchestrated backend development, consistently delivering high-quality products.",
+                "Spearheaded troubleshooting efforts, swiftly resolving production issues to minimize downtime."
+            ]
+        },
+        {
+            "company": "RenewBuy",
+            "location": "Gurugram, Haryana, India",
+            "position": "Senior Software Engineer",
+            "duration": "30th May 2022 – 01st August 2022",
+            "responsibilities": [
+                "Developed APIs and optimized backend services for wallet and payout systems.",
+                "Troubleshot issues, conducted code reviews, and participated in daily stand-ups."
+            ]
+        },
+        {
+            "company": "Knowlarity Communications",
+            "location": "Gurugram, Haryana, India",
+            "position": "Software Developer",
+            "duration": "30th September 2021 – 29th May 2022",
+            "responsibilities": [
+                "Enhanced Outbound Call systems, improving call success rates.",
+                "Optimized codebase to reduce technical debt and boost performance."
+            ]
+        },
+        {
+            "company": "Great Software Laboratory",
+            "location": "Pune, Maharashtra, India",
+            "position": "Software Engineer",
+            "duration": "2nd July 2019 – 29th September 2022",
+            "responsibilities": [
+                "Designed and implemented robust architectures, ensuring project success.",
+                "Enhanced application performance and resolved production issues."
+            ]
+        },
+        {
+            "company": "Great Software Laboratory",
+            "location": "Pune, Maharashtra, India",
+            "position": "Software Engineer (Intern)",
+            "duration": "2nd August 2018 – 30th June 2019",
+            "responsibilities": [
+                "Worked as a full-stack developer, developing features and optimizing performance."
+            ]
+        }
+    ],
+    "education": {
+        "degree": "Bachelor of Technology",
+        "field": "Computer Science and Engineering",
+        "year": "2015 - 2019",
+        "institution": "Lovely Professional University, Jalandhar, Punjab, India"
+    },
+    "certifications": [
+        {
+            "name": "Data Structures and Algorithms Nano Degree",
+            "provider": "Udacity",
+            "id": "CANUTXDS",
+            "url": "https://www.udacity.com/certificate/e/da515ff0-34ab-11e8-9e58-8f268e19913a"
+        },
+        {
+            "name": "Complete 2022 Web Development MOOC",
+            "provider": "Udemy",
+            "id": "UC-30HPQA6I",
+            "url": "https://www.udemy.com/certificate/UC-30HPQA6I/"
+        }
+    ],
+    "hobbies": [
+        "Playing Cricket",
+        "Learning new technologies",
+        "Listening to music"
+    ]
+}

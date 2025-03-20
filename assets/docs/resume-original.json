@@ -1,0 +1,218 @@
+{
+    "name": {
+        "firstName": "Swetank",
+        "middleName": "",
+        "lastName": "Subham"
+    },
+    "email": {
+        "primary": "connect@swetanksubham.com",
+        "alternative": "connect.swetanksubham@gmail.com"
+    },
+    "contactNumber": {
+        "primary": {
+            "countryCode": "91",
+            "number": "9110090019"
+        },
+        "alternative": {
+            "countryCode": "91",
+            "number": "7541010019"
+        }
+    },
+    "socialMediaHandler": {
+        "linkedIn": "/in/swetank-subham/",
+        "website": "https://swetanksubham.com"
+    },
+    "address": {
+        "correspondence": "Noida, Uttar Pradesh, India",
+        "Permanent": "Muzaffarpur, Bihar, India"
+    },
+    "profileSummary": "Results-driven Senior Software Engineer with 5+ years of experience in backend development, API engineering, and system optimization. Adept at driving innovation and delivering high-impact solutions. Passionate about continuous learning and pushing the boundaries of technology.",
+    "skill": {
+        "ratingScale": 5,
+        "skills": [
+            {
+                "name": "Python",
+                "rating": 4.5
+            },
+            {
+                "name": "Java",
+                "rating": 3.5
+            },
+            {
+                "name": "Javascript",
+                "rating": 4.5
+            },
+            {
+                "name": "Shell Scripting",
+                "rating": 4.5
+            },
+            {
+                "name": "Git",
+                "rating": 4.5
+            },
+            {
+                "name": "Jira",
+                "rating": 4.5
+            },
+            {
+                "name": "Linux",
+                "rating": 4.5
+            },
+            {
+                "name": "Docker",
+                "rating": 4.5
+            },
+            {
+                "name": "Data Structures",
+                "rating": 4.5
+            },
+            {
+                "name": "HTML",
+                "rating": 4.5
+            },
+            {
+                "name": "Tesseract",
+                "rating": 4.5
+            },
+            {
+                "name": "PHP",
+                "rating": 4.5
+            },
+            {
+                "name": "MySQL",
+                "rating": 4.5
+            },
+            {
+                "name": "jOOQ",
+                "rating": 4.5
+            },
+            {
+                "name": "OpenCV",
+                "rating": 4.5
+            },
+            {
+                "name": "Sanic",
+                "rating": 4.5
+            },
+            {
+                "name": "Django",
+                "rating": 4.5
+            },
+            {
+                "name": "Spring Boot",
+                "rating": 4.5
+            },
+            {
+                "name": "LLMs",
+                "rating": 4.5
+            },
+            {
+                "name": "Ollama",
+                "rating": 4.5
+            }
+        ]
+    },
+    "relevantExperience": {
+        "year": 5,
+        "month": 8,
+        "day": null
+    },
+    "workHistory": [
+        {
+            "organisation": "R Systems",
+            "location": "Noida, Uttar Pradesh, India",
+            "dateOfJoining": "2022-08-25",
+            "lastWorkingDate": null,
+            "designation": "Senior Software Engineer",
+            "isCurrentOrganisation": true,
+            "jobDescription": [
+                "Orchestrated backend development, consistently delivering high-quality products.",
+                "Spearheaded troubleshooting efforts, swiftly resolving production issues to minimize downtime."
+            ],
+            "organisationWebsite": "https://rsystems.com"
+        },
+        {
+            "organisation": "RenewBuy",
+            "location": "Gurugram, Haryana, India",
+            "dateOfJoining": "2022-05-30",
+            "lastWorkingDate": "2022-08-01",
+            "designation": "Senior Software Engineer",
+            "isCurrentOrganisation": false,
+            "jobDescription": [
+                "Worked with team responsible for generating payouts and wallet systems.",
+                "Engineered APIs and backend optimisations, troubleshooting issues, code review, daily stand-up."
+            ],
+            "organisationWebsite": "https://renewbuy.com"
+        },
+        {
+            "organisation": "Knowlarity Communications",
+            "location": "Gurugram, Haryana, India",
+            "dateOfJoining": "2021-09-30",
+            "lastWorkingDate": "2022-05-29",
+            "designation": "Software Developer",
+            "isCurrentOrganisation": false,
+            "jobDescription": [
+                "Engineered new features and enhancements for Outbound Call systems, improving call success rates.",
+                "Optimized codebase, reducing technical debt and improving performance."
+            ],
+            "organisationWebsite": "https://knowlarity.com"
+        },
+        {
+            "organisation": "Great Software Laboratory",
+            "location": "Pune, Maharashtra, India",
+            "dateOfJoining": "2019-07-02",
+            "lastWorkingDate": "2021-07-29",
+            "designation": "Software Engineer",
+            "isCurrentOrganisation": false,
+            "jobDescription": [
+                "Designed and implemented robust architectures for multiple projects, driving project success.",
+                "Enhanced and optimized features, boosting application performance and production troubleshooting."
+            ],
+            "organisationWebsite": "https://gslab.com"
+        },
+        {
+            "organisation": "Great Software Laboratory",
+            "location": "Pune, Maharashtra, India",
+            "dateOfJoining": "2018-08-02",
+            "lastWorkingDate": "2019-06-30",
+            "designation": "Software Engineer (Intern)",
+            "isCurrentOrganisation": false,
+            "jobDescription": [
+                "Worked as a full-stack developer. Role includes feature development. Enhancement and possible optimisations, daily stand-up."
+            ],
+            "organisationWebsite": "https://gslab.com"
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Technology",
+            "schoolCollege": "Computer Science and Technology",
+            "boardUniversity": "Lovely Professional University",
+            "affliatedBy": "UGC",
+            "location": "Jalandhar, Punhab",
+            "from": 2015,
+            "to": 2019
+        }
+    ],
+    "cerification": [
+        {
+            "topic": "Data Structures and Algorithms",
+            "type": "Nano Degree",
+            "authority": "Udacity",
+            "cetificateId": "CANUTXDS",
+            "certificateLink": "https://www.udacity.com/certificate/e/da515ff0-34ab-11e8-9e58-8f268e19913a"
+        },
+        {
+            "topic": "The Complete 2022 Web Development Course - Build 15 Projects",
+            "type": "MOOC",
+            "authority": "Udemy",
+            "cetificateId": "UC-30HPQA6I",
+            "certificateLink": "https://www.udemy.com/certificate/UC-30HPQA6I/"
+        }
+    ],
+    "hobbies": [
+        "Playing Cricket",
+        "Learn new technology",
+        "Listening to music"
+    ]
+}
