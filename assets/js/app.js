@@ -298,7 +298,7 @@ window.addEventListener('scroll', (e) => {
     }, 100);
 }, false);
 
-const url = '/assets/docs/swetank-subham-resume-v6.pdf';
+const url = '/assets/docs/swetank-subham-resume-v7.pdf';
 
   //
   // The workerSrc property shall be specified.
