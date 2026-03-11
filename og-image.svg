@@ -1,0 +1,42 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Swetank Subham | Software Engineer</title>
+  <desc id="desc">Backend engineer with 6 plus years of experience building robust systems and modern web applications.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#121A32"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="80" x2="930" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="48" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="120" r="160" fill="#38BDF8" opacity="0.18" filter="url(#glow)"/>
+  <circle cx="180" cy="550" r="180" fill="#A855F7" opacity="0.16" filter="url(#glow)"/>
+
+  <rect x="74" y="88" width="1052" height="454" rx="28" fill="rgba(15,23,42,0.5)" stroke="rgba(148,163,184,0.25)"/>
+
+  <text x="120" y="190" fill="#7DD3FC" font-size="30" font-family="Inter, Segoe UI, Arial, sans-serif" letter-spacing="5">✦ SOFTWARE ENGINEER</text>
+  <text x="120" y="300" fill="white" font-size="84" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Swetank Subham</text>
+  <text x="120" y="372" fill="#CBD5E1" font-size="34" font-family="Inter, Segoe UI, Arial, sans-serif">
+    Backend engineer with 6+ years building robust systems
+  </text>
+  <text x="120" y="420" fill="#CBD5E1" font-size="34" font-family="Inter, Segoe UI, Arial, sans-serif">
+    and modern web applications.
+  </text>
+
+  <rect x="120" y="466" width="470" height="44" rx="22" fill="url(#accent)"/>
+  <text x="144" y="495" fill="#090E1B" font-size="24" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">
+    swetanksubham.com
+  </text>
+</svg>

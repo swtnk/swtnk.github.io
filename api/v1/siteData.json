@@ -1,0 +1,228 @@
+{
+  "navbar": {
+    "brand": "✦ Swetank Subham",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Career", "href": "#career" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Certifications", "href": "#certifications" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Resume", "href": "#resume" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "watermark": "SWETANK",
+    "badge": "✦ Software Engineer",
+    "firstName": "Swetank",
+    "lastName": "Subham",
+    "description": "Backend engineer with 6+ years of experience. I build robust systems and love crafting beautiful web frontends.",
+    "primaryCta": { "label": "Resume", "href": "#resume" },
+    "secondaryCta": { "label": "Get in Touch", "href": "mailto:portfolio@swetanksubham.com" },
+    "socials": [
+      { "platform": "github", "href": "https://github.com/iswetank" },
+      { "platform": "linkedin", "href": "https://linkedin.com/in/swetanksubham" },
+      { "platform": "mastodon", "href": "https://mastodon.social/@swetanksubham" }
+    ],
+    "meta": [
+      "Muzaffarpur, India",
+      "Open to opportunities",
+      "DOB: 11 Aug 1996"
+    ]
+  },
+  "about": {
+    "sectionHeading": "✦ About",
+    "titlePrefix": "A lifelong learner &",
+    "titleHighlight": "implementer",
+    "description": "I am very keen to use my technical and managing skills for the betterment of the software industry by keeping mutual growth in mind. With around 10 months internship + 6+ years of corporate experience in software development including Django, Laravel, Yii, RASA (AI chatbot), and more.",
+    "details": [
+      { "icon": "graduation", "label": "Degree", "value": "Bachelor of Technology" },
+      { "icon": "phone", "label": "Phone", "value": "+91 9110 09 0019", "href": "tel:+919110090019" },
+      { "icon": "globe", "label": "Website", "value": "swetanksubham.com", "href": "https://swetanksubham.com" },
+      { "icon": "briefcase", "label": "Status", "value": "Employed / Open to better opportunities" }
+    ]
+  },
+  "career": {
+    "sectionHeading": "✦ Career",
+    "titlePrefix": "Professional",
+    "titleHighlight": "Experience",
+    "intro": "Building resilient backend systems across product and platform teams, from rapid delivery cycles to production-scale reliability.",
+    "summary": {
+      "currentRoleLabel": "Current Role",
+      "positionsLabel": "Positions",
+      "previousRolesSuffix": "previous roles",
+      "focusLabel": "Focus",
+      "focusTitle": "Backend Engineering",
+      "focusSubtitle": "Delivery, reliability, and scale"
+    },
+    "metadataLabels": {
+      "company": "Company",
+      "location": "Location",
+      "period": "Period"
+    },
+    "panelBadge": "Professional Experience",
+    "impactLabel": "Impact Highlights",
+    "jobs": [
+      {
+        "company": "R Systems",
+        "role": "Lead Engineer",
+        "location": "Noida",
+        "period": "Aug 2025 - Present",
+        "responsibilities": [
+          "Orchestrated backend delivery across multiple modules, consistently shipping high-quality releases on schedule",
+          "Led technical execution through design reviews, code reviews, and daily engineering syncs",
+          "Resolved production incidents quickly with focused root-cause analysis and permanent fixes",
+          "Drove feature enhancements and performance optimizations for core backend flows"
+        ]
+      },
+      {
+        "company": "R Systems",
+        "role": "Senior Software Engineer",
+        "location": "Noida",
+        "period": "Aug 2022 - Jul 2025",
+        "responsibilities": [
+          "Delivered backend services and APIs with reliable estimates, quality checks, and timely completion",
+          "Handled production troubleshooting and stabilization for business-critical workflows",
+          "Contributed to peer code reviews and engineering best practices across the team",
+          "Improved existing features with refactors and targeted performance tuning"
+        ]
+      },
+      {
+        "company": "RenewBuy",
+        "role": "Senior Software Engineer",
+        "location": "Gurugram",
+        "period": "May 2022 - Aug 2022",
+        "responsibilities": [
+          "Developed and optimized backend APIs for wallet and payout systems",
+          "Troubleshot production issues and improved service reliability under active traffic",
+          "Participated in code reviews and daily stand-ups to keep delivery predictable"
+        ]
+      },
+      {
+        "company": "Knowlarity Communications",
+        "role": "Software Developer",
+        "location": "Gurugram",
+        "period": "Sep 2021 - May 2022",
+        "responsibilities": [
+          "Enhanced outbound calling systems to improve call success rates and platform consistency",
+          "Optimized backend code paths to reduce technical debt and improve maintainability",
+          "Supported production operations and release hardening with focused troubleshooting"
+        ]
+      },
+      {
+        "company": "Great Software Laboratory",
+        "role": "Software Engineer",
+        "location": "Pune",
+        "period": "Jul 2019 - Sep 2021",
+        "responsibilities": [
+          "Designed and implemented robust backend architecture for multiple product modules",
+          "Enhanced application performance and resolved critical production issues",
+          "Mentored team members and interns through practical Python and backend training"
+        ]
+      },
+      {
+        "company": "Great Software Laboratory",
+        "role": "Software Engineer (Intern)",
+        "location": "Pune",
+        "period": "Aug 2018 - Jun 2019",
+        "responsibilities": [
+          "Worked as a full-stack developer, building features across backend and UI layers",
+          "Contributed to issue troubleshooting and explored new tools/approaches for faster delivery"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "sectionHeading": "✦ Projects",
+    "titlePrefix": "Featured",
+    "titleHighlight": "Work",
+    "items": [
+      {
+        "title": "SkyMap",
+        "description": "An interactive 3D planetarium application that allows you to explore the night sky with accurate astronomical positions of constellations, stars, and planets.",
+        "tech": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+        "link": "https://swetanksubham.com/skymap/",
+        "github": "https://github.com/swtnk/skymap"
+      },
+      {
+        "title": "SysM - System Monitor",
+        "description": "System Monitoring tool. Realtime monitoring of CPU, Memory, Disk, Network, and Processes with a clean and intuitive UI.",
+        "tech": ["Java", "Spring Boot"]
+      },
+      {
+        "title": "Editor",
+        "description": "Web based code editor with custom language server support. Provides syntax highlighting, code completion, and error checking for multiple programming languages.",
+        "tech": ["Python", "RASA", "NLP", "REST APIs"],
+        "link": "https://swetanksubham.com/editor/"
+      },
+      {
+        "title": "Ancestry",
+        "description": "Create and visualize your family tree with an intuitive interface. Add family members, define relationships, and explore your ancestry with interactive charts and timelines.",
+        "tech": ["Javascript", "HTML", "CSS"],
+        "link": "https://swetanksubham.com/ancestry/"
+      }
+    ]
+  },
+  "certifications": {
+    "sectionHeading": "✦ Certification",
+    "titlePrefix": "Certifications &",
+    "titleHighlight": "MOOCs",
+    "idPrefix": "ID:",
+    "items": [
+      {
+        "title": "Data Structures and Algorithms",
+        "issuer": "Nano Degree, Udacity",
+        "type": "Massive Open Online Courses",
+        "link": "https://graduation.udacity.com/confirm/CANUTXDS",
+        "id": "CANUTXDS"
+      },
+      {
+        "title": "The Complete Web Development Course",
+        "issuer": "Udemy",
+        "type": "Massive Open Online Courses",
+        "link": "https://www.udemy.com/certificate/UC-30HPQA6I/",
+        "id": "UC-30HPQA6I"
+      }
+    ]
+  },
+  "skills": {
+    "sectionHeading": "✦ Skills",
+    "titlePrefix": "Proficiency &",
+    "titleHighlight": "Expertise",
+    "groups": [
+      { "category": "Languages", "skills": ["Python", "JavaScript", "Go Lang", "HTML", "CSS", "Markdown"] },
+      { "category": "Frameworks", "skills": ["Django", "Sanic", "Rasa", "Pandas", "NumPy"] },
+      { "category": "Databases", "skills": ["MySQL", "PostgreSQL", "MongoDB"] },
+      { "category": "Tools & Platforms", "skills": ["Git", "GitHub", "GitLab", "Bitbucket", "Jira", "VS Code", "PyCharm"] },
+      { "category": "Operating Systems", "skills": ["Linux", "MacOS", "Windows"] }
+    ]
+  },
+  "resume": {
+    "sectionHeading": "✦ Resume",
+    "titlePrefix": "View My",
+    "titleHighlight": "Resume",
+    "url": "/api/v1/swetank-subham-resume-v7.pdf",
+    "fileName": "swetank-subham-resume.pdf",
+    "versionText": "Latest version",
+    "openLabel": "Open",
+    "downloadLabel": "Download",
+    "previewTitle": "Resume Preview"
+  },
+  "footer": {
+    "sectionHeading": "✦ Open to better opportunities",
+    "titlePrefix": "Thanks &",
+    "titleHighlight": "Regards",
+    "name": "Swetank Subham",
+    "copyrightSuffix": "All rights reserved.",
+    "contacts": [
+      { "icon": "mail", "label": "portfolio@swetanksubham.com", "href": "mailto:portfolio@swetanksubham.com" },
+      { "icon": "phone", "label": "+91 9110 09 0019", "href": "tel:+919110090019" },
+      { "icon": "globe", "label": "swetanksubham.com", "href": "https://swetanksubham.com" }
+    ],
+    "socials": [
+      { "platform": "github", "href": "https://github.com/iswetank" },
+      { "platform": "linkedin", "href": "https://linkedin.com/in/swetanksubham" },
+      { "platform": "mastodon", "href": "https://mastodon.social/@swetanksubham" }
+    ]
+  }
+}

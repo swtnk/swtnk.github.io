@@ -1,0 +1,305 @@
+[
+  {
+    "name": "Revenue Mix by Product Segment",
+    "language": "python",
+    "code": [
+      "import pandas as pd",
+      "segments = pd.DataFrame(",
+      "    [",
+      "        (\"Platform\", 42),",
+      "        (\"Integrations\", 21),",
+      "        (\"Services\", 18),",
+      "        (\"Enterprise Add-ons\", 12),",
+      "        (\"Training\", 7)",
+      "    ],",
+      "    columns=[\"segment\", \"revenue_m\"]",
+      ")",
+      "share = (segments[\"revenue_m\"] / segments[\"revenue_m\"].sum()) * 100",
+      "segments[\"share_pct\"] = share.round(1)"
+    ],
+    "outputType": "pie",
+    "output": {
+      "labels": ["Platform", "Integrations", "Services", "Enterprise Add-ons", "Training"],
+      "datasets": [
+        {
+          "label": "Revenue share",
+          "data": [42, 21, 18, 12, 7],
+          "backgroundColor": [
+            "rgba(56,189,248,0.72)",
+            "rgba(168,85,247,0.7)",
+            "rgba(34,197,94,0.68)",
+            "rgba(250,204,21,0.65)",
+            "rgba(248,113,113,0.66)"
+          ],
+          "borderColor": "rgba(15,23,42,0.65)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Regional Delivery Throughput",
+    "language": "java",
+    "code": [
+      "record RegionStat(String region, int jobsProcessed) {}",
+      "var stats = List.of(",
+      "  new RegionStat(\"North\", 1260),",
+      "  new RegionStat(\"South\", 980),",
+      "  new RegionStat(\"East\", 1340),",
+      "  new RegionStat(\"West\", 1125)",
+      ");",
+      "int peak = stats.stream().mapToInt(RegionStat::jobsProcessed).max().orElse(0);",
+      "double utilization = stats.stream().mapToInt(RegionStat::jobsProcessed).average().orElse(0) / peak;"
+    ],
+    "outputType": "bar",
+    "output": {
+      "labels": ["North", "South", "East", "West"],
+      "datasets": [
+        {
+          "label": "Jobs processed",
+          "data": [1260, 980, 1340, 1125],
+          "backgroundColor": "rgba(56,189,248,0.42)",
+          "borderColor": "rgba(56,189,248,1)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Latency Trend by Release Train",
+    "language": "python",
+    "code": [
+      "releases = [\"R1\", \"R2\", \"R3\", \"R4\", \"R5\", \"R6\"]",
+      "p95_latency_ms = [420, 390, 360, 335, 318, 302]",
+      "error_budget_burn = [9.2, 8.1, 7.4, 6.6, 5.9, 5.2]",
+      "paired = list(zip(releases, p95_latency_ms, error_budget_burn))"
+    ],
+    "outputType": "line",
+    "output": {
+      "labels": ["R1", "R2", "R3", "R4", "R5", "R6"],
+      "datasets": [
+        {
+          "label": "P95 latency (ms)",
+          "data": [420, 390, 360, 335, 318, 302],
+          "borderColor": "rgba(244,114,182,1)",
+          "backgroundColor": "rgba(244,114,182,0.2)",
+          "fill": true,
+          "tension": 0.28
+        }
+      ]
+    }
+  },
+  {
+    "name": "Incident Resolution Time Distribution",
+    "language": "java",
+    "code": [
+      "int[] resolutionMinutes = {12, 18, 21, 24, 27, 30, 33, 36, 40, 44, 48, 55, 63, 74};",
+      "int[] bins = {0, 15, 30, 45, 60, 75, 90};",
+      "int[] counts = new int[bins.length - 1];",
+      "for (int minute : resolutionMinutes) {",
+      "  for (int i = 0; i < bins.length - 1; i++) {",
+      "    if (minute >= bins[i] && minute < bins[i + 1]) { counts[i]++; break; }",
+      "  }",
+      "}"
+    ],
+    "outputType": "histogram",
+    "output": {
+      "labels": ["0-15", "15-30", "30-45", "45-60", "60-75", "75-90"],
+      "datasets": [
+        {
+          "label": "Incidents",
+          "data": [1, 4, 5, 2, 2, 0],
+          "backgroundColor": "rgba(250,204,21,0.45)",
+          "borderColor": "rgba(250,204,21,1)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Platform Capability Tree",
+    "language": "python",
+    "code": [
+      "capability_tree = {",
+      "  \"platform\": [\"onboarding\", \"billing\", \"observability\"],",
+      "  \"onboarding\": [\"self-serve\", \"guided\"],",
+      "  \"billing\": [\"invoicing\", \"dunning\"],",
+      "  \"observability\": [\"logs\", \"metrics\"],",
+      "  \"self-serve\": [], \"guided\": [], \"invoicing\": [],",
+      "  \"dunning\": [], \"logs\": [], \"metrics\": []",
+      "}"
+    ],
+    "outputType": "tree",
+    "output": {
+      "nodes": [
+        { "id": "platform", "x": 50, "y": 10, "size": 6, "color": "rgba(56,189,248,0.95)" },
+        { "id": "onboarding", "x": 15, "y": 34, "size": 4.6, "color": "rgba(34,197,94,0.9)" },
+        { "id": "billing", "x": 50, "y": 34, "size": 4.6, "color": "rgba(34,197,94,0.9)" },
+        { "id": "observability", "x": 85, "y": 34, "size": 4.6, "color": "rgba(34,197,94,0.9)" },
+        { "id": "self-serve", "x": 5, "y": 64, "size": 3.7, "color": "rgba(168,85,247,0.88)" },
+        { "id": "guided", "x": 21, "y": 64, "size": 3.7, "color": "rgba(168,85,247,0.88)" },
+        { "id": "invoicing", "x": 37, "y": 64, "size": 3.7, "color": "rgba(168,85,247,0.88)" },
+        { "id": "dunning", "x": 63, "y": 64, "size": 3.7, "color": "rgba(168,85,247,0.88)" },
+        { "id": "logs", "x": 79, "y": 64, "size": 3.7, "color": "rgba(168,85,247,0.88)" },
+        { "id": "metrics", "x": 95, "y": 64, "size": 3.7, "color": "rgba(168,85,247,0.88)" }
+      ],
+      "edges": [
+        { "source": "platform", "target": "onboarding", "strength": 1.8 },
+        { "source": "platform", "target": "billing", "strength": 1.8 },
+        { "source": "platform", "target": "observability", "strength": 1.8 },
+        { "source": "onboarding", "target": "self-serve" },
+        { "source": "onboarding", "target": "guided" },
+        { "source": "billing", "target": "invoicing" },
+        { "source": "billing", "target": "dunning" },
+        { "source": "observability", "target": "logs" },
+        { "source": "observability", "target": "metrics" }
+      ]
+    }
+  },
+  {
+    "name": "Cross-Team Collaboration Graph",
+    "language": "java",
+    "code": [
+      "record Team(String name) {}",
+      "var teams = List.of(",
+      "  new Team(\"Product\"), new Team(\"Data\"), new Team(\"Platform\"),",
+      "  new Team(\"SalesOps\"), new Team(\"Support\"), new Team(\"Finance\")",
+      ");",
+      "Map<String, Integer> collaborationWeight = Map.of(",
+      "  \"Product-Data\", 8, \"Product-Platform\", 7, \"Data-Finance\", 5,",
+      "  \"SalesOps-Support\", 6, \"Platform-Support\", 4, \"Product-SalesOps\", 6",
+      ");"
+    ],
+    "outputType": "graph",
+    "output": {
+      "nodes": [
+        { "id": "Product", "x": 20, "y": 20, "size": 5.2, "color": "rgba(56,189,248,0.94)" },
+        { "id": "Data", "x": 45, "y": 14, "size": 4.4, "color": "rgba(34,197,94,0.9)" },
+        { "id": "Platform", "x": 70, "y": 24, "size": 5.1, "color": "rgba(34,197,94,0.9)" },
+        { "id": "SalesOps", "x": 24, "y": 58, "size": 4.6, "color": "rgba(168,85,247,0.9)" },
+        { "id": "Support", "x": 52, "y": 72, "size": 4.7, "color": "rgba(168,85,247,0.9)" },
+        { "id": "Finance", "x": 82, "y": 60, "size": 4.2, "color": "rgba(250,204,21,0.95)" }
+      ],
+      "edges": [
+        { "source": "Product", "target": "Data", "strength": 2.4 },
+        { "source": "Product", "target": "Platform", "strength": 2.2 },
+        { "source": "Data", "target": "Finance", "strength": 1.9 },
+        { "source": "SalesOps", "target": "Support", "strength": 2.1 },
+        { "source": "Platform", "target": "Support", "strength": 1.7 },
+        { "source": "Product", "target": "SalesOps", "strength": 2.0 }
+      ]
+    }
+  },
+  {
+    "name": "Experiment Cohort Performance Matrix",
+    "language": "python",
+    "code": [
+      "cohorts = [\"Control\", \"Variant A\", \"Variant B\", \"Variant C\"]",
+      "metrics = [\"signups\", \"activation_pct\", \"retention_d7\", \"nps\"]",
+      "matrix = [",
+      "  [1240, 42.1, 31.8, 38],",
+      "  [1372, 44.9, 33.6, 40],",
+      "  [1311, 43.4, 34.5, 41],",
+      "  [1286, 45.2, 35.1, 43]",
+      "]"
+    ],
+    "outputType": "table",
+    "output": {
+      "columns": ["Cohort", "Signups", "Activation %", "Day-7 Retention %", "NPS"],
+      "rows": [
+        ["Control", 1240, 42.1, 31.8, 38],
+        ["Variant A", 1372, 44.9, 33.6, 40],
+        ["Variant B", 1311, 43.4, 34.5, 41],
+        ["Variant C", 1286, 45.2, 35.1, 43]
+      ]
+    }
+  },
+  {
+    "name": "Stock Price Trend with Volume Spikes",
+    "language": "python",
+    "code": [
+      "import pandas as pd",
+      "ticks = pd.DataFrame({",
+      "  'day': ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],",
+      "  'close_usd': [182.4, 184.1, 183.2, 186.7, 189.5, 188.9, 191.3],",
+      "  'volume_m': [3.1, 3.8, 3.3, 4.6, 5.2, 4.4, 5.9]",
+      "})",
+      "ticks['daily_change_pct'] = ticks['close_usd'].pct_change().fillna(0) * 100",
+      "momentum = ticks['close_usd'].rolling(3).mean().round(2)"
+    ],
+    "outputType": "line",
+    "output": {
+      "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "datasets": [
+        {
+          "label": "Close price (USD)",
+          "data": [182.4, 184.1, 183.2, 186.7, 189.5, 188.9, 191.3],
+          "borderColor": "rgba(56,189,248,1)",
+          "backgroundColor": "rgba(56,189,248,0.22)",
+          "fill": true,
+          "tension": 0.32
+        }
+      ]
+    }
+  },
+  {
+    "name": "Geo Distribution of Active Accounts",
+    "language": "java",
+    "code": [
+      "record RegionUsers(String region, int activeAccounts) {}",
+      "var distribution = List.of(",
+      "  new RegionUsers(\"North America\", 45200),",
+      "  new RegionUsers(\"Europe\", 33600),",
+      "  new RegionUsers(\"APAC\", 38900),",
+      "  new RegionUsers(\"LATAM\", 16800),",
+      "  new RegionUsers(\"MEA\", 12400)",
+      ");",
+      "int globalTotal = distribution.stream().mapToInt(RegionUsers::activeAccounts).sum();",
+      "double apacShare = distribution.get(2).activeAccounts() * 100.0 / globalTotal;"
+    ],
+    "outputType": "bar",
+    "output": {
+      "labels": ["North America", "Europe", "APAC", "LATAM", "MEA"],
+      "datasets": [
+        {
+          "label": "Active accounts",
+          "data": [45200, 33600, 38900, 16800, 12400],
+          "backgroundColor": "rgba(168,85,247,0.42)",
+          "borderColor": "rgba(168,85,247,1)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Portfolio Allocation by Market Sector",
+    "language": "python",
+    "code": [
+      "allocation = {",
+      "  'Technology': 34,",
+      "  'Healthcare': 19,",
+      "  'Financials': 17,",
+      "  'Energy': 11,",
+      "  'Consumer': 13,",
+      "  'Industrial': 6",
+      "}",
+      "total = sum(allocation.values())",
+      "weights = {k: round(v * 100 / total, 1) for k, v in allocation.items()}"
+    ],
+    "outputType": "pie",
+    "output": {
+      "labels": ["Technology", "Healthcare", "Financials", "Energy", "Consumer", "Industrial"],
+      "datasets": [
+        {
+          "label": "Portfolio %",
+          "data": [34, 19, 17, 11, 13, 6],
+          "backgroundColor": [
+            "rgba(56,189,248,0.72)",
+            "rgba(34,197,94,0.68)",
+            "rgba(168,85,247,0.7)",
+            "rgba(250,204,21,0.65)",
+            "rgba(244,114,182,0.66)",
+            "rgba(248,113,113,0.66)"
+          ],
+          "borderColor": "rgba(15,23,42,0.65)"
+        }
+      ]
+    }
+  }
+]
